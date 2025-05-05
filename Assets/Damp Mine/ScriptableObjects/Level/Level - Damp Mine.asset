@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409054382c13ee7d4e9126c1b58d3c2b, type: 3}
+  m_Name: Level - Damp Mine
+  m_EditorClassIdentifier: 
+  ResourcePath: Damp Mine
+  NarrativeName: Cinder mining Co.
+  ModuleAmount: 5
+  PassageMaxAmount: 5
+  HasEnemies: 1
+  ConnectObject: {fileID: 8772608135075150248, guid: ac8b8a1d5ff04414ab92b4c995807f6f, type: 3}
+  BlockObject: {fileID: 0}
+  StartRooms:
+  - {fileID: 5227532413459726582, guid: 7c656c93164781444ad5d164ae1bd8c7, type: 3}
+  LoadingGraphic01: {fileID: 21300000, guid: acea187a47bba74418600c2c0ca95fb7, type: 2}
+  LoadingGraphic02: {fileID: 21300000, guid: e005c9ef3af7f6349b3fa536c6fbc56e, type: 2}
+  LoadingGraphic03: {fileID: 21300000, guid: 7c17c329f4ca13945bc6795c46a018a5, type: 2}
+  ModulesNormal1:
+  - {fileID: 1432250811671746602, guid: ca6572f1bc934964e9252c7d3916b80e, type: 3}
+  ModulesPassage1:
+  - {fileID: 4768393142918141997, guid: c484b012142d46b4ea8643a66295dfc7, type: 3}
+  ModulesDeadEnd1:
+  - {fileID: 8064752036496519320, guid: d573d63eec0aafb4c8cf065f1c17b59e, type: 3}
+  ModulesExtraction1:
+  - {fileID: 3917197743787878582, guid: 246236c17651f134ead6466f2f4e4118, type: 3}
+  ModulesNormal2:
+  - {fileID: 1432250811671746602, guid: ca6572f1bc934964e9252c7d3916b80e, type: 3}
+  ModulesPassage2:
+  - {fileID: 4768393142918141997, guid: c484b012142d46b4ea8643a66295dfc7, type: 3}
+  ModulesDeadEnd2:
+  - {fileID: 8064752036496519320, guid: d573d63eec0aafb4c8cf065f1c17b59e, type: 3}
+  ModulesExtraction2:
+  - {fileID: 8064752036496519320, guid: d573d63eec0aafb4c8cf065f1c17b59e, type: 3}
+  ModulesNormal3:
+  - {fileID: 1432250811671746602, guid: ca6572f1bc934964e9252c7d3916b80e, type: 3}
+  ModulesPassage3:
+  - {fileID: 4768393142918141997, guid: c484b012142d46b4ea8643a66295dfc7, type: 3}
+  ModulesDeadEnd3:
+  - {fileID: 8064752036496519320, guid: d573d63eec0aafb4c8cf065f1c17b59e, type: 3}
+  ModulesExtraction3:
+  - {fileID: 8064752036496519320, guid: d573d63eec0aafb4c8cf065f1c17b59e, type: 3}
+  ValuablePresets: []
+  MusicPreset: {fileID: 11400000, guid: ea77afe9afd06094eab2b6e717b06ae7, type: 2}
+  ConstantMusicPreset: {fileID: 0}
+  AmbiencePresets:
+  - {fileID: 11400000, guid: d18bcbec5ca46284fa597f9de2b3c144, type: 2}
+  FogColor: {r: 0, g: 0, b: 0, a: 1}
+  FogStartDistance: 0
+  FogEndDistance: 15
+  AmbientColor: {r: 0, g: 0, b: 0.2, a: 1}
+  AmbientColorAdaptation: {r: 0.06, g: 0.06, b: 0.39, a: 1}
+  ColorTemperature: 0
+  ColorFilter: {r: 1, g: 1, b: 1, a: 1}
+  BloomIntensity: 10
+  BloomThreshold: 0.9
+  VignetteColor: {r: 0.02, g: 0, b: 0.22, a: 0}
+  VignetteIntensity: 0.4
+  VignetteSmoothness: 0.7
