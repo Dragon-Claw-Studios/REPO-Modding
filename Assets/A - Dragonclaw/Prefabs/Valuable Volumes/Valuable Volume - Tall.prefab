@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4050707640667090904}
   - component: {fileID: 5409465583434825077}
-  - component: {fileID: 7451974460893718413}
-  - component: {fileID: -8219835203231223911}
+  - component: {fileID: 864631797368456496}
+  - component: {fileID: 1634251405834167133}
   m_Layer: 0
   m_Name: Valuable Volume - Tall
   m_TagString: Untagged
@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f98c5d4417b4321d13269cf9771ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VolumeType: 0
+  VolumeType: 5
   Module: {fileID: 0}
---- !u!114 &7451974460893718413
+--- !u!114 &864631797368456496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
---- !u!114 &-8219835203231223911
+--- !u!114 &1634251405834167133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,9 +77,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 2ce37c28e786a434dafcecfa4a18e692, type: 2}
+    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
+    _objectReferences: []
 --- !u!1 &7300179423495919453
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,8 +88,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3258199627700064830}
-  - component: {fileID: 4300557820549162139}
-  - component: {fileID: 4683150893009682520}
+  - component: {fileID: 2571009572195284553}
+  - component: {fileID: 1046337031302682945}
   m_Layer: 0
   m_Name: Gizmo
   m_TagString: Untagged
@@ -113,7 +112,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4050707640667090904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4300557820549162139
+--- !u!114 &2571009572195284553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,10 +125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Size","value":{"x":2.0,"y":3.0,"z":1.5,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
---- !u!114 &4683150893009682520
+--- !u!114 &1046337031302682945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,6 +140,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 8050d28d857c29548b33af08d62ba1c4, type: 2}
+    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
+    _objectReferences: []

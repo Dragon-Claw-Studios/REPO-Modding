@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 898870363717942701}
-  - component: {fileID: 5753935638132610786}
-  - component: {fileID: 4443157280929467540}
   m_Layer: 0
   m_Name: Gizmo
   m_TagString: Untagged
@@ -33,38 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3702133294927141688}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5753935638132610786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2304481331960295220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Size","value":{"x":0.75,"y":0.6,"z":0.75,"$type":"UnityEngine.Vector3"},"typeHandle":{"Identification":"UnityEngine.Vector3,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &4443157280929467540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2304481331960295220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 8050d28d857c29548b33af08d62ba1c4, type: 2}
 --- !u!1 &7739527876288998012
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,8 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3702133294927141688}
   - component: {fileID: 4631345249103251861}
-  - component: {fileID: 8637810457821419027}
-  - component: {fileID: 555513272774187651}
   m_Layer: 0
   m_Name: Valuable Volume - Small
   m_TagString: Untagged
@@ -112,36 +76,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f98c5d4417b4321d13269cf9771ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VolumeType: 0
+  VolumeType: 1
   Module: {fileID: 0}
---- !u!114 &8637810457821419027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7739527876288998012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &555513272774187651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7739527876288998012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 2ce37c28e786a434dafcecfa4a18e692, type: 2}
