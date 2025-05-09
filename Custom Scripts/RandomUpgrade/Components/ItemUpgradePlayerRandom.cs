@@ -3,48 +3,47 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
+using Photon.Pun;
 
-namespace RandomUpgrade;
-public class ItemUpgradePlayerRandom : MonoBehaviour
+namespace RandomUpgrade
 {
-    private ItemToggle itemToggle;
-    private static List<MethodInfo> upgradeMethods;
-
-    private void Start()
+    public class ItemUpgradePlayerRandom : MonoBehaviour
     {
-        itemToggle = GetComponent<ItemToggle>();
+        private ItemToggle _itemToggle;
+        private static List<MethodInfo> _upgradeMethods;
 
-        // Only initialize once
-        if (upgradeMethods == null)
+        private void Start()
         {
-            upgradeMethods = typeof(PunManager)
-                .GetMethods(BindingFlags.Instance | BindingFlags.Public)
-                .Where(m =>
-                    m.Name.StartsWith("UpgradePlayer") &&
-                    m.ReturnType == typeof(int) &&
-                    m.GetParameters().Length == 1 &&
-                    m.GetParameters()[0].ParameterType == typeof(string))
-                .ToList();
+            _itemToggle = GetComponent<ItemToggle>();
 
-            Debug.Log($"[ItemUpgradePlayerRandom] Found {upgradeMethods.Count} upgrade methods.");
-        }
-    }
-
-    public void Upgrade()
-    {
-        if (upgradeMethods == null || upgradeMethods.Count == 0)
-        {
-            Debug.LogWarning("[ItemUpgradePlayerRandom] No upgrade methods found.");
-            return;
+            // Initialize methods only once
+            if (_upgradeMethods == null)
+            {
+                _upgradeMethods = typeof(PunManager)
+                    .GetMethods(BindingFlags.Instance | BindingFlags.Public)
+                    .Where(m =>
+                        m.Name.StartsWith("UpgradePlayer", StringComparison.Ordinal) &&
+                        m.ReturnType == typeof(int) &&
+                        m.GetParameters().Length == 1 &&
+                        m.GetParameters()[0].ParameterType == typeof(string))
+                    .ToList();
+            }
         }
 
-        string steamID = SemiFunc.PlayerGetSteamID(
-            SemiFunc.PlayerAvatarGetFromPhotonID(itemToggle.playerTogglePhotonID));
+        public void Upgrade()
+        {
+            // Only allow the master client to perform the upgrade
+            if (!PhotonNetwork.IsMasterClient) return;
 
-        // Pick a random upgrade method
-        MethodInfo method = upgradeMethods[UnityEngine.Random.Range(0, upgradeMethods.Count)];
-        Debug.Log($"[ItemUpgradePlayerRandom] Applying upgrade: {method.Name} to SteamID: {steamID}");
+            // Ensure there are available methods
+            if (_upgradeMethods == null || _upgradeMethods.Count == 0) return;
 
-        method.Invoke(PunManager.instance, new object[] { steamID });
+            string steamId = SemiFunc.PlayerGetSteamID(
+                SemiFunc.PlayerAvatarGetFromPhotonID(_itemToggle.playerTogglePhotonID));
+
+            // Pick a random upgrade method and invoke
+            MethodInfo method = _upgradeMethods[UnityEngine.Random.Range(0, _upgradeMethods.Count)];
+            method.Invoke(PunManager.instance, new object[] { steamId });
+        }
     }
 }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DragonClaw")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2885a3407a4753ec89d502d249f0625a58d9e789")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68af4b430e25fe67aa7ef8c77c251a840496617a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RandomUpgrade")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RandomUpgrade")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

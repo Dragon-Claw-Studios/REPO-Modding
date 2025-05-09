@@ -76,6 +76,9 @@ crashlytics-build.properties
 
 # Patcher specific
 /[Aa]ssets/REPO/Game/*
+!/Assets/REPO/Game/**/*.meta
+!/assets/REPO/Game/**/*.meta  # Also include lowercase path just in case
+
 *.dll*
 /AssetRipper/*
 /AssetRipperOutput/*
