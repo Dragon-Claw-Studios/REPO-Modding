@@ -75,9 +75,12 @@ crashlytics-build.properties
 .idea/
 
 # Patcher specific
-/[Aa]ssets/REPO/Game/*
+
+# Ignore everything
+/Assets/REPO/Game/**
+
+# Allow meta files (which will implicitly include their parent folders)
 !/Assets/REPO/Game/**/*.meta
-!/assets/REPO/Game/**/*.meta  # Also include lowercase path just in case
 
 *.dll*
 /AssetRipper/*
