@@ -76,10 +76,12 @@ crashlytics-build.properties
 
 # Patcher specific
 
-# Ignore everything
+
+# Ignore all ripped files
 /Assets/REPO/Game/**
 
-# Allow meta files (which will implicitly include their parent folders)
+# Allow subdirectories and .meta files
+!/Assets/REPO/Game/**/
 !/Assets/REPO/Game/**/*.meta
 
 *.dll*
