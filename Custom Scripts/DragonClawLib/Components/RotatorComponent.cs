@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 namespace DragonClawLib;
-
 public class RotatorComponent : MonoBehaviour
 {
     [Tooltip("Rotation speed in degrees per second")]
