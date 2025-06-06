@@ -4,62 +4,62 @@ using DragonClawLib;
 using Photon.Pun;
 using UnityEngine;
 
-namespace DragonClawLib;
-public class ModularValuableLogic : MonoBehaviour
+namespace DragonClawLib
 {
-    private ValuableObject valuableObject;
-    private PhotonView photonView;
-
-    public List<ValueModifierPart> parts = new List<ValueModifierPart>();
-
-    private void Awake()
+    public class ModularValuableLogic : MonoBehaviour
     {
-        valuableObject = GetComponent<ValuableObject>();
-        photonView = GetComponent<PhotonView>();
+        private ValuableObject valuableObject;
+        private PhotonView photonView;
 
-        // Auto-find all parts on children if not assigned manually
-        if (parts.Count == 0)
-            parts = GetComponentsInChildren<ValueModifierPart>().ToList();
-    }
+        public List<ValueModifierPart> parts = new List<ValueModifierPart>();
 
-    private void Start()
-    {
-        // Wait for ValuableObject to start coroutine first
-        StartCoroutine(ApplyPartValuesLater());
-    }
-
-    private System.Collections.IEnumerator ApplyPartValuesLater()
-    {
-        // Wait until dollar value is initially set
-        yield return new WaitUntil(() => valuableObject.dollarValueSet);
-
-        float baseValue = valuableObject.dollarValueOriginal;
-        float modifierTotal = parts.Sum(part => part.valueModifier);
-        float finalValue = Mathf.Round(baseValue + modifierTotal);
-
-        if (SemiFunc.IsMultiplayer())
+        private void Awake()
         {
-            if (SemiFunc.IsMasterClient())
+            valuableObject = GetComponent<ValuableObject>();
+            photonView = GetComponent<PhotonView>();
+            // Don't get parts here yet - they may be disabled/not active.
+        }
+
+        private void Start()
+        {
+            // Now that parts should be enabled by ModularValuableBuilder, fetch them:
+            parts = GetComponentsInChildren<ValueModifierPart>(true).Where(p => p.gameObject.activeInHierarchy).ToList();
+
+            StartCoroutine(ApplyPartValuesLater());
+        }
+
+        private System.Collections.IEnumerator ApplyPartValuesLater()
+        {
+            yield return new WaitUntil(() => valuableObject.dollarValueSet);
+
+            float baseValue = valuableObject.dollarValueOriginal;
+            float modifierTotal = 1f + (0.1f * parts.Sum(part => part.valueModifier));
+            float finalValue = Mathf.Round(baseValue * modifierTotal);
+
+            if (SemiFunc.IsMultiplayer())
+            {
+                if (SemiFunc.IsMasterClient())
+                {
+                    valuableObject.dollarValueOriginal = finalValue;
+                    valuableObject.dollarValueCurrent = finalValue;
+                    photonView.RPC("SyncFinalValue", RpcTarget.Others, finalValue);
+                }
+            }
+            else
             {
                 valuableObject.dollarValueOriginal = finalValue;
                 valuableObject.dollarValueCurrent = finalValue;
-                photonView.RPC("SyncFinalValue", RpcTarget.Others, finalValue);
             }
+
+            //Debug.Log($"[ModularValuable] Total Value Set: {finalValue} (Base: {baseValue}, Parts: {modifierTotal})");
         }
-        else
+
+        [PunRPC]
+        private void SyncFinalValue(float value)
         {
-            valuableObject.dollarValueOriginal = finalValue;
-            valuableObject.dollarValueCurrent = finalValue;
+            valuableObject.dollarValueOriginal = value;
+            valuableObject.dollarValueCurrent = value;
+            valuableObject.dollarValueSet = true;
         }
-
-        Debug.Log($"[ModularValuable] Total Value Set: {finalValue} (Base: {baseValue}, Parts: {modifierTotal})");
-    }
-
-    [PunRPC]
-    private void SyncFinalValue(float value)
-    {
-        valuableObject.dollarValueOriginal = value;
-        valuableObject.dollarValueCurrent = value;
-        valuableObject.dollarValueSet = true;
     }
 }

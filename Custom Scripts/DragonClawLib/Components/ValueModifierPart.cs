@@ -3,6 +3,6 @@
 namespace DragonClawLib;
 public class ValueModifierPart : MonoBehaviour
 {
-    [Tooltip("Value this part adds to the total item value.")]
-    public float valueModifier = 100f;
+    [Tooltip("Percentage that this part adds to the base value of the item.")]
+    public float valueModifier = 0f;
 }
