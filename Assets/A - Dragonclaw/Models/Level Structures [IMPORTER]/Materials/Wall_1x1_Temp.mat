@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Wall_1x1_Temp
-  m_Shader: {fileID: -6465566751694194690, guid: d4048d8062798fa44a0f736a969e3dce, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d653ec394c7353c4cbbc221f7fa2f9a0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -41,6 +41,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: 6400514c5c40ab44a886c14fc8a49f31, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -97,16 +101,20 @@ Material:
     - _Normal_Strength: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Radius: 5
     - _Smoothness: 0.3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _WallSize: 5
     - _ZWrite: 1
     m_Colors:
+    - _ArcCenter: {r: 0, g: 5, b: 0, a: 0}
     - _Color: {r: 1, g: 0.3537736, b: 0.67341244, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &8859745589257014300
 MonoBehaviour:

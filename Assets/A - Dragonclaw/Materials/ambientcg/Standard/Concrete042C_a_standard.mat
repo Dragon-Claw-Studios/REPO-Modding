@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Concrete042C_a_standard
-  m_Shader: {fileID: -6465566751694194690, guid: d4048d8062798fa44a0f736a969e3dce, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d653ec394c7353c4cbbc221f7fa2f9a0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -127,6 +127,7 @@ Material:
     - _Parallax: 0.02
     - _QueueControl: -1
     - _QueueOffset: 0
+    - _Radius: 5
     - _RotationDegrees: 0
     - _Roughness_Map_Toggle: 1
     - _Smoothness: 0.3
@@ -135,11 +136,13 @@ Material:
     - _SrcBlend: 1
     - _Tiling: 0.2
     - _UVSec: 0
+    - _WallSize: 5
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
+    - _ArcCenter: {r: 0, g: 5, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Tiling: {r: 0.5, g: 1, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

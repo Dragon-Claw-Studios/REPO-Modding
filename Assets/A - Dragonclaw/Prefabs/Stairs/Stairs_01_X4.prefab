@@ -1841,6 +1841,7 @@ Transform:
   - {fileID: 7448773838614497836}
   - {fileID: 4604404882443404127}
   - {fileID: 4579311535721464824}
+  - {fileID: 5420612336016915685}
   m_Father: {fileID: 5126818276708868220}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4609391650568539582
@@ -2240,6 +2241,51 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000005, y: 0.2500062, z: 0.24999642}
   m_Center: {x: -1.0000002, y: 2.3750014, z: 2.375002}
+--- !u!1 &8236614403744184353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5420612336016915685}
+  - component: {fileID: 3568118630428638812}
+  m_Layer: 0
+  m_Name: DirtFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5420612336016915685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236614403744184353}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1981426924252564120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3568118630428638812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236614403744184353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633e72ab879ec56da0cf34846742c08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 13
 --- !u!1 &8578122194442645029
 GameObject:
   m_ObjectHideFlags: 0
