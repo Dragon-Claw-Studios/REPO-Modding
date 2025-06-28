@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286b5cd625bf07ea05b460cba5d2465b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hingeAudio: {fileID: 11400000, guid: 1b2a590779512ed4da31b6c3113ca8e3, type: 2}
+  hingeAudio: {fileID: 11400000, guid: 7b203896fb3cc8945854938e9a422ce8, type: 2}
   audioSource: {fileID: 2859616358611752618}
   hingePoint: {fileID: 8444808875681980187}
   hingeOffsetPositiveThreshold: 30
@@ -920,8 +920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e94dcf3314020481f880b97f02fc505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  physAttributePreset: {fileID: 11400000, guid: 1836567b6231974458b4246675c98d9e, type: 2}
-  audioPreset: {fileID: 11400000, guid: a591dbacd48e040408716162889cf403, type: 2}
+  physAttributePreset: {fileID: 11400000, guid: baf58e1c07e599f4fb09876064efe56b, type: 2}
+  audioPreset: {fileID: 11400000, guid: 6c5b46336fcd0534cb4e19eb798e7a36, type: 2}
   durabilityPreset: {fileID: 0}
   particleColors:
     serializedVersion: 2
@@ -1015,6 +1015,7 @@ MonoBehaviour:
   isCart: 0
   fragilityMultiplier: 1
   impactFragilityMultiplier: 1
+  centerPointNeedsToBeInsideCart: 0
 --- !u!114 &720715292094547741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,7 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  DoorPrefab: {fileID: 1931042100187678, guid: e6818ef51a5158c4593bee2349008607, type: 3}
+  DoorPrefab: {fileID: 1700254134190616, guid: 44599fd3970bae44a95c1a5d8a120f47, type: 3}
   Hinge: {fileID: 6746844568028534065}
 --- !u!1 &2431913165654220990
 GameObject:
@@ -1679,7 +1680,7 @@ AudioSource:
   m_GameObject: {fileID: 4368969952078171214}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300038, guid: e976115d38d99584b92af1f9bdfdfab3, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300038, guid: 1721bd8b24fd59c44ae18fd8ea89c9b6, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
