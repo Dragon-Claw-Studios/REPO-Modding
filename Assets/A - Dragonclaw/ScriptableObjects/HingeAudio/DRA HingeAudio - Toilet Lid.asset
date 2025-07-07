@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897e8f233528331e22c87d88897eef88, type: 3}
+  m_Name: DRA HingeAudio - Toilet Lid
+  m_EditorClassIdentifier: 
+  moveLoopEnabled: 1
+  moveLoopVelocityMult: -0.1
+  moveLoopThreshold: 0.2
+  moveLoopFadeInSpeed: 5
+  moveLoopFadeOutSpeed: 5
+  moveLoop:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 19828cb4a521ffb45a062939d3c40974, type: 3}
+    Type: 3
+    Volume: 0.2
+    VolumeRandom: 0.05
+    Pitch: 2
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  moveLoopEnd:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: f0a13bba564eeee4ba057e48ca926214, type: 3}
+    - {fileID: 8300000, guid: 54ad2d8185331e540991468d969323b9, type: 3}
+    - {fileID: 8300000, guid: 4d90bf70709faa34489d0f67cfdc40de, type: 3}
+    Type: 3
+    Volume: 0.2
+    VolumeRandom: 0.05
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  Close:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 2847559beae0d2d47a42ed9076604f35, type: 3}
+    - {fileID: 8300000, guid: 774b6eac2f4c011408fd26f68b0e6db6, type: 3}
+    - {fileID: 8300000, guid: b3d2210ffa3a95847a6ac7122afbfaab, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  CloseHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: ab2f47c8db5b81f41ad440ba35700eca, type: 3}
+    - {fileID: 8300000, guid: bfff314d326b7a540b75f6d482b93dcc, type: 3}
+    - {fileID: 8300000, guid: 8be4a9dcfdfa0434f801c8ec15aa96d6, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  Open:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 377fa07948c829842b5efe6072af833e, type: 3}
+    - {fileID: 8300000, guid: 243eae2da413b6c4b94727e9e9c85b09, type: 3}
+    - {fileID: 8300000, guid: 8d1242bef73fd2647bb3099a73b87a1a, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  OpenHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 377fa07948c829842b5efe6072af833e, type: 3}
+    - {fileID: 8300000, guid: 243eae2da413b6c4b94727e9e9c85b09, type: 3}
+    - {fileID: 8300000, guid: 8d1242bef73fd2647bb3099a73b87a1a, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  HingeBreak:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: e2629772bae69264790ecf79f4cdf321, type: 3}
+    - {fileID: 8300000, guid: bb390ca05b3a931478ebb25c6e3f46e4, type: 3}
+    - {fileID: 8300000, guid: a842465f4adf622439c398cc8b3f9e7a, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []

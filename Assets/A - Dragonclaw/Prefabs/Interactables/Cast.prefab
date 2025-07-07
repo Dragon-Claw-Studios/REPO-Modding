@@ -1741,6 +1741,7 @@ GameObject:
   - component: {fileID: 1689272820500265989}
   - component: {fileID: 6185398486297872217}
   - component: {fileID: 455928797350138615}
+  - component: {fileID: 277790936149513400}
   m_Layer: 0
   m_Name: Cast
   m_TagString: Untagged
@@ -1866,6 +1867,25 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &277790936149513400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971411984374583365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2007690192950558019
 GameObject:
   m_ObjectHideFlags: 0
@@ -4379,9 +4399,15 @@ MonoBehaviour:
   enemyHitTorque: 0
   enemyRayCast: 0
   enemyHitTriggers: 0
+  deathPit: 0
   hitSpread: 180
   ignoreObjects:
   - {fileID: 5448893801784576345}
+  hasTimer: 0
+  timer: 0.2
+  destroyOnTimerEnd: 0
+  hasCustomRaycastPosition: 0
+  customRaycastPosition: {x: 0, y: 0, z: 0}
   onImpactAny:
     m_PersistentCalls:
       m_Calls: []
@@ -5491,6 +5517,7 @@ MonoBehaviour:
   isCart: 0
   fragilityMultiplier: 1
   impactFragilityMultiplier: 1
+  centerPointNeedsToBeInsideCart: 0
 --- !u!114 &6713028149441616071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5567,7 +5594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 286b5cd625bf07ea05b460cba5d2465b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hingeAudio: {fileID: 11400000, guid: 05f8e60b71197904c8962b324fb26b27, type: 2}
+  hingeAudio: {fileID: 11400000, guid: f5277392bd0da814bb3ca805b7938d14, type: 2}
   audioSource: {fileID: 2841255101213586341}
   hingePoint: {fileID: 9205904920667956551}
   hingeOffsetPositiveThreshold: 0
@@ -5616,7 +5643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   physAttributePreset: {fileID: 11400000, guid: 7b1aca0012975b6448e3fb90e20cf642, type: 2}
-  audioPreset: {fileID: 11400000, guid: f7574227b774e0544b04047ab511f681, type: 2}
+  audioPreset: {fileID: 11400000, guid: a085bb0603ca2b1489224d16f0bef27f, type: 2}
   durabilityPreset: {fileID: 0}
   particleColors:
     serializedVersion: 2

@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328afba7744a086ddaa619a79c16685d, type: 3}
+  m_Name: DRA PhysAudio - Enemy Valuable
+  m_EditorClassIdentifier: 
+  impactLight:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 567e8e3d0ab473f4fa1d414255c8d1f3, type: 3}
+    - {fileID: 8300000, guid: 155ca13d8a1f5864aa41bb543423a7b2, type: 3}
+    - {fileID: 8300000, guid: b055eecd7c07c5c4cbcf2dae1274d589, type: 3}
+    Type: 3
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  impactMedium:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: b9f0396d0d1c137429c8d3a6be529830, type: 3}
+    - {fileID: 8300000, guid: f653b9fd06b64924fbd30db0a06db3e5, type: 3}
+    - {fileID: 8300000, guid: 42db6c92cfbfe094c9c64bd26b01daef, type: 3}
+    Type: 3
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  impactHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 1c7e10a41056b894cbd170a2cb792953, type: 3}
+    - {fileID: 8300000, guid: 2a512f6cf5f221748b3a0f70b0c4daed, type: 3}
+    - {fileID: 8300000, guid: ba5e9269d3f296d48895113a071d9ce6, type: 3}
+    Type: 3
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  breakLight:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 8259e90125945ec45960bbe437fac6f5, type: 3}
+    - {fileID: 8300000, guid: 4576d4e94c262f6498dca4c3887d3c55, type: 3}
+    - {fileID: 8300000, guid: 840ac0fed30565e4a863e6fe3bfbd7c3, type: 3}
+    Type: 3
+    Volume: 0.256
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  breakMedium:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 702abef6adfd975498b34f56ef99e037, type: 3}
+    - {fileID: 8300000, guid: d375c2161547add439db0dfaafbb1bc6, type: 3}
+    - {fileID: 8300000, guid: 03d1936899c648c42840c770626f92e7, type: 3}
+    Type: 3
+    Volume: 0.366
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  breakHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 702abef6adfd975498b34f56ef99e037, type: 3}
+    - {fileID: 8300000, guid: d375c2161547add439db0dfaafbb1bc6, type: 3}
+    - {fileID: 8300000, guid: 03d1936899c648c42840c770626f92e7, type: 3}
+    Type: 3
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  destroy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 167108a091b92f54d8042969fae14a2d, type: 3}
+    - {fileID: 8300000, guid: 62c816cbc7fa2994d8d5aca8fa54ddaa, type: 3}
+    - {fileID: 8300000, guid: e300c1e61d6138047af437b8cf2cf9d9, type: 3}
+    Type: 3
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []

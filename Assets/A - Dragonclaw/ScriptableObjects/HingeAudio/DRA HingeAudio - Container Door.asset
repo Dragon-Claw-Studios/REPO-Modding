@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897e8f233528331e22c87d88897eef88, type: 3}
+  m_Name: DRA HingeAudio - Container Door
+  m_EditorClassIdentifier: 
+  moveLoopEnabled: 1
+  moveLoopVelocityMult: -0.1
+  moveLoopThreshold: 0.2
+  moveLoopFadeInSpeed: 5
+  moveLoopFadeOutSpeed: 5
+  moveLoop:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 8723c25414357194a800c0ab2baac3e0, type: 3}
+    Type: 3
+    Volume: 0.2
+    VolumeRandom: 0.05
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  moveLoopEnd:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 92c65c91feeb5164380afed19d2bc7e3, type: 3}
+    - {fileID: 8300000, guid: 554d054edf09aa941bffe78be77cde81, type: 3}
+    - {fileID: 8300000, guid: 31b722a7763c87541b030b6bce283338, type: 3}
+    Type: 3
+    Volume: 0.2
+    VolumeRandom: 0.05
+    Pitch: 0.66
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  Close:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 34b93cb2d3944674f9919bbcf4f89bd6, type: 3}
+    - {fileID: 8300000, guid: 6006273d7c1e62c4788c3468ee9ba9b7, type: 3}
+    - {fileID: 8300000, guid: ac9f80bb0ba246d4bb5a5eeb261aa284, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 0.62
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  CloseHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: d916fcafede8804479b1598d854a4149, type: 3}
+    - {fileID: 8300000, guid: 58a035731ef81e44fbdeb51d02d09a2b, type: 3}
+    - {fileID: 8300000, guid: 1b32f42a5a452bf4cb89a3576b706802, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 0.64
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  Open:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 695f961015d54b14383ab9f7656be44f, type: 3}
+    - {fileID: 8300000, guid: 44262a07d16548d4f87167772a31f26b, type: 3}
+    - {fileID: 8300000, guid: b05af1d929fb711458d81ccc68588164, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 0.55
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  OpenHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 695f961015d54b14383ab9f7656be44f, type: 3}
+    - {fileID: 8300000, guid: 44262a07d16548d4f87167772a31f26b, type: 3}
+    - {fileID: 8300000, guid: b05af1d929fb711458d81ccc68588164, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 0.53
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  HingeBreak:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: c9915f10a6a792a4c93cb08b3116a441, type: 3}
+    - {fileID: 8300000, guid: 34bcd32cf9de5774881638bb2895abbd, type: 3}
+    - {fileID: 8300000, guid: df6703ebdf4c9414fa592545f5b69864, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 0.55
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []

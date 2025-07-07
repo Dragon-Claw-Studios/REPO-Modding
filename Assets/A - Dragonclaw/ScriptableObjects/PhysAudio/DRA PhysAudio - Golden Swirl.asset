@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328afba7744a086ddaa619a79c16685d, type: 3}
+  m_Name: DRA PhysAudio - Golden Swirl
+  m_EditorClassIdentifier: 
+  impactLight:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 1f5231ae7717ec84ba80dfc49cadb394, type: 3}
+    - {fileID: 8300000, guid: 0a8807fadc4a931448742c727ba2b4e1, type: 3}
+    - {fileID: 8300000, guid: 6f39d3c091056ac419cf181a1fcbb65f, type: 3}
+    Type: 3
+    Volume: 0.128
+    VolumeRandom: 0.1
+    Pitch: 0.57
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  impactMedium:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: bd48c7773b7d35045943998146d3d691, type: 3}
+    - {fileID: 8300000, guid: 39f07e932926def4ea5de0e3100e5ad7, type: 3}
+    - {fileID: 8300000, guid: cac5b96bbceda004089da071fdac5f0c, type: 3}
+    Type: 3
+    Volume: 0.174
+    VolumeRandom: 0.1
+    Pitch: 0.63
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  impactHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: f7793198bca893f4a94cd41193248cf8, type: 3}
+    - {fileID: 8300000, guid: c30fb3d215b5d744abf00764cfad7aad, type: 3}
+    - {fileID: 8300000, guid: e22f4965869fddd4bab2d8e83c437440, type: 3}
+    Type: 3
+    Volume: 0.363
+    VolumeRandom: 0.1
+    Pitch: 0.63
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  breakLight:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: d1213df0d1ffdb34f8560710d978e1de, type: 3}
+    - {fileID: 8300000, guid: 39dd70a8c2a4ab74391f62653e5ded37, type: 3}
+    - {fileID: 8300000, guid: 35f2c0bb880882e4b97923225cbe62bf, type: 3}
+    Type: 3
+    Volume: 0.107
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  breakMedium:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: d1213df0d1ffdb34f8560710d978e1de, type: 3}
+    - {fileID: 8300000, guid: 39dd70a8c2a4ab74391f62653e5ded37, type: 3}
+    - {fileID: 8300000, guid: 35f2c0bb880882e4b97923225cbe62bf, type: 3}
+    Type: 3
+    Volume: 0.168
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  breakHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: d1213df0d1ffdb34f8560710d978e1de, type: 3}
+    - {fileID: 8300000, guid: 39dd70a8c2a4ab74391f62653e5ded37, type: 3}
+    - {fileID: 8300000, guid: 35f2c0bb880882e4b97923225cbe62bf, type: 3}
+    Type: 3
+    Volume: 0.252
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  destroy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 7aa484d3f9928b742b7d1506e6585cb4, type: 3}
+    Type: 3
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []

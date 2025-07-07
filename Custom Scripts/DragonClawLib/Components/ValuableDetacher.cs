@@ -22,11 +22,11 @@ namespace DragonClawLib
             if (rack != null)
             {
                 rack.SetParent(null); // Detach from the valuable
-                Debug.Log($"[ValuableDetacher] Detached '{detachableName}' from valuable");
+                //Debug.Log($"[ValuableDetacher] Detached '{detachableName}' from valuable");
             }
             else
             {
-                Debug.LogWarning($"[ValuableDetacher] Could not find child '{detachableName}'");
+                //Debug.LogWarning($"[ValuableDetacher] Could not find child '{detachableName}'");
             }
         }
 
@@ -35,7 +35,7 @@ namespace DragonClawLib
             if (rb != null)
             {
                 rb.constraints = RigidbodyConstraints.None; // Let physics take over
-                Debug.Log("[ValuableDetacher] Rigidbody constraints released");
+                //Debug.Log("[ValuableDetacher] Rigidbody constraints released");
             }
         }
     }

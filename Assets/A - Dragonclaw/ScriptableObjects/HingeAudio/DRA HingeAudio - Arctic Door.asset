@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897e8f233528331e22c87d88897eef88, type: 3}
+  m_Name: DRA HingeAudio - Arctic Door
+  m_EditorClassIdentifier: 
+  moveLoopEnabled: 1
+  moveLoopVelocityMult: -0.1
+  moveLoopThreshold: 0.2
+  moveLoopFadeInSpeed: 5
+  moveLoopFadeOutSpeed: 5
+  moveLoop:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: d2555828dcb085242a890b67d8a84207, type: 3}
+    Type: 3
+    Volume: 0.2
+    VolumeRandom: 0.05
+    Pitch: 2
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  moveLoopEnd:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 0599d3aa74e9f884ea5f3aa6ddc8ca4a, type: 3}
+    - {fileID: 8300000, guid: caae2b2730cb4004cbadff8d33ea885d, type: 3}
+    - {fileID: 8300000, guid: 716d353b6d7bde841979d3ef9c914176, type: 3}
+    Type: 3
+    Volume: 0.2
+    VolumeRandom: 0.05
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  Close:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 5b87f685f552d4d43b5f0fb837f03417, type: 3}
+    - {fileID: 8300000, guid: de80c53ec1bc59541a204eb1a307f481, type: 3}
+    - {fileID: 8300000, guid: a6bfefa404d4dca4bb8bd31e3f06531f, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  CloseHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: d4d6ddc6039fa82468477b715751314d, type: 3}
+    - {fileID: 8300000, guid: 9a05d80d69b7d0741adf7d899d0fc48b, type: 3}
+    - {fileID: 8300000, guid: 643f56e78a391254db74adc5706b5db0, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  Open:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 839258d7979c88440b2c83a2daf86660, type: 3}
+    - {fileID: 8300000, guid: b1d0d66e45f69f741b2a2d1bd09669cf, type: 3}
+    - {fileID: 8300000, guid: fcb5c7900057d744f8f56c797ea99033, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  OpenHeavy:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: 839258d7979c88440b2c83a2daf86660, type: 3}
+    - {fileID: 8300000, guid: b1d0d66e45f69f741b2a2d1bd09669cf, type: 3}
+    - {fileID: 8300000, guid: fcb5c7900057d744f8f56c797ea99033, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
+  HingeBreak:
+    Source: {fileID: 0}
+    Sounds:
+    - {fileID: 8300000, guid: b651684dbf77ac44588e33a72d42e619, type: 3}
+    - {fileID: 8300000, guid: c7ec3d7ac0d8321429faf76b0d4d0de3, type: 3}
+    - {fileID: 8300000, guid: 06a66bf709cbf044782666ec0d1a8844, type: 3}
+    Type: 0
+    Volume: 0.5
+    VolumeRandom: 0.1
+    Pitch: 1
+    PitchRandom: 0.1
+    SpatialBlend: 1
+    Doppler: 1
+    ReverbMix: 1
+    FalloffMultiplier: 1
+    OffscreenVolume: 1
+    OffscreenFalloff: 1
+    LowPassIgnoreColliders: []
