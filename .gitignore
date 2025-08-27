@@ -75,13 +75,10 @@ crashlytics-build.properties
 .idea/
 
 # Patcher specific
-
 /Assets/Unity.VisualScripting.Generated/**
 
-# Ignore all ripped files
+# Ignore all ripped files except meta data
 /Assets/REPO/Game/**
-
-# Allow subdirectories and .meta files
 !/Assets/REPO/Game/**/
 !/Assets/REPO/Game/**/*.meta
 
