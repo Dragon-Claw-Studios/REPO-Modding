@@ -423,6 +423,7 @@ GameObject:
   - component: {fileID: 2225301940582472000}
   - component: {fileID: 6076686626240665754}
   - component: {fileID: 7521662853126236438}
+  - component: {fileID: 6988152139150319464}
   m_Layer: 0
   m_Name: Vent_01_Bend_Straight
   m_TagString: Untagged
@@ -480,6 +481,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 228971cae3df87947949312b447b1a3e, type: 2}
+  - {fileID: 2100000, guid: c7873a3af41d35949a4931ddbc4fe625, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -501,6 +503,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6988152139150319464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861115591840659963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970e8d106b009207b99b03173c29f921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 12
 --- !u!1 &6477275225641660807
 GameObject:
   m_ObjectHideFlags: 0
