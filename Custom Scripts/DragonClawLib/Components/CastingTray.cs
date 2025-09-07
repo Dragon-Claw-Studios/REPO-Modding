@@ -51,6 +51,8 @@ public class CastingTray : MonoBehaviour
         {
             foreach (var mat in renderer.sharedMaterials)
             {
+                if (mat == null) continue; // <-- guard against missing materials
+
                 if (mat.name.StartsWith(materialNameSkip))
                 {
                     // Debug.Log($"Skipping {valuable.name}, already cast.");
@@ -69,17 +71,23 @@ public class CastingTray : MonoBehaviour
             containedValuables.Add(valuable);
             // Debug.Log($"Adding item to be cast: {valuable.name}");
 
-            // Attach the destruction watcher
-            var watcher = valuable.gameObject.AddComponent<ValuableDestructionWatcher>();
-            watcher.tray = this;
+            // Attach or reuse the destruction watcher
+            var watcher = valuable.GetComponent<ValuableDestructionWatcher>();
+            if (watcher == null)
+            {
+                watcher = valuable.gameObject.AddComponent<ValuableDestructionWatcher>();
+            }
+
+            // Reassign tray reference if needed
+            if (watcher.tray != this)
+            {
+                watcher.tray = this;
+            }
+
             watcher.valuable = valuable;
         }
         UpdateIndicatorColor();
     }
-
-
-
-
 
     void OnTriggerExit(Collider other)
     {
@@ -157,6 +165,11 @@ public class CastingTray : MonoBehaviour
             for (int i = 0; i < newMats.Length; i++)
             {
                 Material original = renderer.sharedMaterials[i];
+                if (original == null)
+                {
+                    newMats[i] = null;
+                    continue;
+                }
 
                 Material moltenCopy = new Material(original);
                 moltenCopy.name = moltenMetalPreset.castedMaterial.name;
