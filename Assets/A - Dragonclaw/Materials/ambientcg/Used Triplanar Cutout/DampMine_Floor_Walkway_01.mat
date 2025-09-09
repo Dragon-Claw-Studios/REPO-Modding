@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DampMine_Floor_Walkway_01
-  m_Shader: {fileID: -6465566751694194690, guid: 777116cfbd79cbe4bbe2b8fdf358782f, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 271c55149909d014985cc12f92ac4199, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -19,12 +19,16 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _Color
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: db765fba04fbaab45b8b0bc5874314c7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7ca71701d12f4804d83cc876728fb33a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color_Mask:
+        m_Texture: {fileID: 2800000, guid: b64e22da69855cc47a0acaa7af47a8a5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -44,11 +48,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4f78e5c016107a74888552eb868a617a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7f4bd67866f94344d9d3fcdf19a9af21, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 6ab50cfa616517c4489896a2063f706a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 68cd5d5745bae264c8dc865afa3c0bef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -60,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Roughness_Map:
-        m_Texture: {fileID: 2800000, guid: 04ab1898c58675b428123623e9b2ea9c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 490e315c742e56e419bfa8070283850f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -71,6 +75,7 @@ Material:
     - _BUILTIN_QueueOffset: 0
     - _Blend_Factor: 1
     - _BumpScale: 2
+    - _Color_Mask_Strength: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -87,11 +92,11 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tiling: 10
+    - _Tiling: 2
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.9019608, g: 0.86619884, b: 0.80003923, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Fresnel_Color: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
