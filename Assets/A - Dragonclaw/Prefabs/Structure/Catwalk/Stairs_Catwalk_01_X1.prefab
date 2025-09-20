@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 2437335289968036060}
   - component: {fileID: 8165917759206065461}
   - component: {fileID: 5484554478101523381}
+  - component: {fileID: 2925103369829832317}
   m_Layer: 0
   m_Name: Stairs_Catwalk_01_X1_Steps
   m_TagString: Untagged
@@ -709,6 +710,19 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &2925103369829832317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6359771995175396576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970e8d106b009207b99b03173c29f921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 5
 --- !u!1 &7020631344923482784
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +944,7 @@ GameObject:
   - component: {fileID: 3051513573187832580}
   - component: {fileID: 7580934429154285112}
   - component: {fileID: 4630878486658261141}
+  - component: {fileID: 5450681043006609116}
   m_Layer: 0
   m_Name: Stairs_Catwalk_01_X1_L
   m_TagString: Untagged
@@ -1003,6 +1018,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5450681043006609116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8491589415668296575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970e8d106b009207b99b03173c29f921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 7
 --- !u!1 &8507333178177889638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1252,7 @@ GameObject:
   - component: {fileID: 6571025785069099212}
   - component: {fileID: 7537520075820583963}
   - component: {fileID: 1336527907056371753}
+  - component: {fileID: 2361390501048779729}
   m_Layer: 0
   m_Name: Stairs_Catwalk_01_X1_R
   m_TagString: Untagged
@@ -1297,3 +1326,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2361390501048779729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9125090217391436520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970e8d106b009207b99b03173c29f921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 7
