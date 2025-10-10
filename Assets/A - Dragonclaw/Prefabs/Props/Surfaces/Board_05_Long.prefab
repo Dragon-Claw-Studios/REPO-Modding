@@ -966,7 +966,8 @@ GameObject:
   - component: {fileID: 7808829718247584159}
   - component: {fileID: 6399412986209326236}
   - component: {fileID: 1012135211399130635}
-  - component: {fileID: 2175343437392333754}
+  - component: {fileID: 3825505992864794281}
+  - component: {fileID: 2992341086921715482}
   m_Layer: 19
   m_Name: Board_05_Long_Navbox
   m_TagString: Untagged
@@ -1079,7 +1080,7 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!114 &2175343437392333754
+--- !u!114 &3825505992864794281
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1088,9 +1089,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 4243308006061949660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f98e9da38b07bbbba87d50a53b595f4, type: 3}
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"ColliderWireframe
+      Color","value":{"r":0.4,"g":0.1882353,"b":1.0,"a":1.0,"$type":"UnityEngine.Color"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"Collider
+      Color","value":{"r":0.9019608,"g":0.2196078,"b":1.0,"a":0.2,"$type":"UnityEngine.Color"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"},{"name":"UseLocalScaling","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &2992341086921715482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4243308006061949660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 86bd445e302d6c54d9053230b1f24f9b, type: 2}
 --- !u!1 &6579636060433541784
 GameObject:
   m_ObjectHideFlags: 0
