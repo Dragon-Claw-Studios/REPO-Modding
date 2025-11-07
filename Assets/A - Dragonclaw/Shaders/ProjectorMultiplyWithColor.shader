@@ -65,7 +65,7 @@ fixed4 frag(v2f i) : SV_Target
     // Apply tint only where cookie mask is active
     fixed3 res = lerp(multiplyResult, _TintColor.rgb, mask * texF.a);
 
-				UNITY_APPLY_FOG_COLOR(i.fogCoord, res, fixed4(1,1,1,1));
+				UNITY_APPLY_FOG_COLOR(i.fogCoord, res, fixed4(0,0,0,0));
     return fixed4(res,1);
 }
 

@@ -44,11 +44,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
-        m_Texture: {fileID: 2800000, guid: a69caf6d33a8214429390186f7d89c1b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1cf084b05974a654bbda14a873a47129, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _FadeEnd: 0.63
+    - _FadeStart: 0.79
+    - _Intensity: 1
+    - _NormalFadePower: 8
     m_Colors:
     - BumpMapScale: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -64,6 +68,7 @@ Material:
     - _Projector_1: {r: -0.0014375485, g: 1.4636691, b: 0.77239656, a: 1.2343576}
     - _Projector_2: {r: -0.107604526, g: -0.18029094, b: 1.0079052, a: 1.9464619}
     - _Projector_3: {r: -0.10451689, g: -0.17511761, b: 0.9789842, a: 2.0877385}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   m_BuildTextureStacks: []
 --- !u!1002 &2100001
