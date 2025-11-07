@@ -190,16 +190,18 @@
           }
         }
       },
-      "R.E.P.O.GameLibs.Steam/0.2.0-ngd.0": {
+      "R.E.P.O.GameLibs.Steam/0.3.0-ngd.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.JSON": "13.0.3",
-          "UnityEngine.Modules": "2022.3.21"
+          "UnityEngine.Modules": "2022.3.62"
         },
         "compile": {
           "ref/netstandard2.1/Assembly-CSharp-firstpass.dll": {},
           "ref/netstandard2.1/Assembly-CSharp.dll": {},
           "ref/netstandard2.1/Autodesk.Fbx.dll": {},
+          "ref/netstandard2.1/Discord.Sdk.dll": {},
+          "ref/netstandard2.1/Domain_Reload.dll": {},
           "ref/netstandard2.1/Facepunch.Steamworks.Win64.dll": {},
           "ref/netstandard2.1/FbxBuildTestAssets.dll": {},
           "ref/netstandard2.1/Klattersynth.dll": {},
@@ -218,13 +220,21 @@
           "ref/netstandard2.1/Sirenix.Serialization.dll": {},
           "ref/netstandard2.1/Sirenix.Utilities.dll": {},
           "ref/netstandard2.1/Unity.AI.Navigation.dll": {},
+          "ref/netstandard2.1/Unity.Burst.Unsafe.dll": {},
+          "ref/netstandard2.1/Unity.Burst.dll": {},
+          "ref/netstandard2.1/Unity.Collections.LowLevel.ILSupport.dll": {},
+          "ref/netstandard2.1/Unity.Collections.dll": {},
           "ref/netstandard2.1/Unity.Formats.Fbx.Runtime.dll": {},
           "ref/netstandard2.1/Unity.InputSystem.ForUI.dll": {},
           "ref/netstandard2.1/Unity.InputSystem.dll": {},
+          "ref/netstandard2.1/Unity.Mathematics.dll": {},
+          "ref/netstandard2.1/Unity.MemoryProfiler.dll": {},
           "ref/netstandard2.1/Unity.Postprocessing.Runtime.dll": {},
+          "ref/netstandard2.1/Unity.Profiling.Core.dll": {},
           "ref/netstandard2.1/Unity.RenderPipelines.Core.Runtime.dll": {},
           "ref/netstandard2.1/Unity.RenderPipelines.Core.ShaderLibrary.dll": {},
           "ref/netstandard2.1/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll": {},
+          "ref/netstandard2.1/Unity.Splines.dll": {},
           "ref/netstandard2.1/Unity.TextMeshPro.dll": {},
           "ref/netstandard2.1/Unity.Timeline.dll": {},
           "ref/netstandard2.1/Unity.VisualScripting.Antlr3.Runtime.dll": {},
@@ -638,7 +648,7 @@
           }
         }
       },
-      "UnityEngine.Modules/2022.3.21": {
+      "UnityEngine.Modules/2022.3.62": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/UnityEngine.AIModule.dll": {},
@@ -1005,18 +1015,20 @@
         "packageIcon.png"
       ]
     },
-    "R.E.P.O.GameLibs.Steam/0.2.0-ngd.0": {
-      "sha512": "4Tv0dDRzUtIUtHvih76Y8aZbGbMulYU32EBCXo+mOKvJFgC5YB/ajICXhgjnGx7c7SgWXfLRKT4ntRsQbGLvlg==",
+    "R.E.P.O.GameLibs.Steam/0.3.0-ngd.0": {
+      "sha512": "zEEqJC8l9BwC5I5wKHxdYNAY6DwNq+iN483JBBOTas3jZkvTvshaNdqm0RiCuvH0z0cvzZLzBfx/EmERqxZXkw==",
       "type": "package",
-      "path": "r.e.p.o.gamelibs.steam/0.2.0-ngd.0",
+      "path": "r.e.p.o.gamelibs.steam/0.3.0-ngd.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "r.e.p.o.gamelibs.steam.0.2.0-ngd.0.nupkg.sha512",
+        "r.e.p.o.gamelibs.steam.0.3.0-ngd.0.nupkg.sha512",
         "r.e.p.o.gamelibs.steam.nuspec",
         "ref/netstandard2.1/Assembly-CSharp-firstpass.dll",
         "ref/netstandard2.1/Assembly-CSharp.dll",
         "ref/netstandard2.1/Autodesk.Fbx.dll",
+        "ref/netstandard2.1/Discord.Sdk.dll",
+        "ref/netstandard2.1/Domain_Reload.dll",
         "ref/netstandard2.1/Facepunch.Steamworks.Win64.dll",
         "ref/netstandard2.1/FbxBuildTestAssets.dll",
         "ref/netstandard2.1/Klattersynth.dll",
@@ -1035,13 +1047,21 @@
         "ref/netstandard2.1/Sirenix.Serialization.dll",
         "ref/netstandard2.1/Sirenix.Utilities.dll",
         "ref/netstandard2.1/Unity.AI.Navigation.dll",
+        "ref/netstandard2.1/Unity.Burst.Unsafe.dll",
+        "ref/netstandard2.1/Unity.Burst.dll",
+        "ref/netstandard2.1/Unity.Collections.LowLevel.ILSupport.dll",
+        "ref/netstandard2.1/Unity.Collections.dll",
         "ref/netstandard2.1/Unity.Formats.Fbx.Runtime.dll",
         "ref/netstandard2.1/Unity.InputSystem.ForUI.dll",
         "ref/netstandard2.1/Unity.InputSystem.dll",
+        "ref/netstandard2.1/Unity.Mathematics.dll",
+        "ref/netstandard2.1/Unity.MemoryProfiler.dll",
         "ref/netstandard2.1/Unity.Postprocessing.Runtime.dll",
+        "ref/netstandard2.1/Unity.Profiling.Core.dll",
         "ref/netstandard2.1/Unity.RenderPipelines.Core.Runtime.dll",
         "ref/netstandard2.1/Unity.RenderPipelines.Core.ShaderLibrary.dll",
         "ref/netstandard2.1/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
+        "ref/netstandard2.1/Unity.Splines.dll",
         "ref/netstandard2.1/Unity.TextMeshPro.dll",
         "ref/netstandard2.1/Unity.Timeline.dll",
         "ref/netstandard2.1/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -2726,10 +2746,10 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "UnityEngine.Modules/2022.3.21": {
-      "sha512": "l5ZNBDk9HyF3i8ISutWbc/jw24pYww0K0HIdbUN4RbzAnvO3lftvr15jyG0bTevBZuVxkwNrZ6SXY9pooIbIkA==",
+    "UnityEngine.Modules/2022.3.62": {
+      "sha512": "zpu5dELUCFt7Rvvzp50iTrfVusJg+2gmlcaytGEoHYuIP+AOv57X272czjp+sA8N1onPo/IiHFnOEFtT9rLJBA==",
       "type": "package",
-      "path": "unityengine.modules/2022.3.21",
+      "path": "unityengine.modules/2022.3.62",
       "files": [
         ".nupkg.metadata",
         "lib/net35/UnityEngine.AIModule.dll",
@@ -2930,7 +2950,7 @@
         "lib/netstandard2.0/UnityEngine.WindModule.dll",
         "lib/netstandard2.0/UnityEngine.XRModule.dll",
         "lib/netstandard2.0/UnityEngine.dll",
-        "unityengine.modules.2022.3.21.nupkg.sha512",
+        "unityengine.modules.2022.3.62.nupkg.sha512",
         "unityengine.modules.nuspec"
       ]
     },
@@ -2957,7 +2977,7 @@
       "BepInEx.Core >= 5.*",
       "Linkoid.Repo.Plugin.Build >= *",
       "R.E.P.O.GameLibs.Steam >= *-*",
-      "UnityEngine.Modules >= 2022.3.21",
+      "UnityEngine.Modules >= 2022.3.62",
       "Zehs.REPOLib >= 2.*"
     ]
   },
@@ -3044,7 +3064,7 @@
             "include": "Compile",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2022.3.21, )"
+            "version": "[2022.3.62, )"
           },
           "Zehs.REPOLib": {
             "target": "Package",

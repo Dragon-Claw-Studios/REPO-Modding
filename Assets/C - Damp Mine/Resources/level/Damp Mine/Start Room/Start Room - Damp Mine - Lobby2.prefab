@@ -28162,7 +28162,7 @@ PrefabInstance:
     - target: {fileID: 328549989156043833, guid: cb6d3f5ddd228c24abea8a9b25a1162a, type: 3}
       propertyPath: ConnectedPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 8869448649434602446}
+      objectReference: {fileID: 7434212884032205182}
     - target: {fileID: 328549989156043833, guid: cb6d3f5ddd228c24abea8a9b25a1162a, type: 3}
       propertyPath: ConnectedPoints.Array.data[1]
       value: 
@@ -31386,6 +31386,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1381621371899321968}
     m_Modifications:
+    - target: {fileID: 132770492611289290, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
+      propertyPath: ConnectedPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 6581974840213451889}
     - target: {fileID: 2155693394217585274, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
       propertyPath: ConnectedPoints.Array.size
       value: 2
@@ -31409,6 +31413,14 @@ PrefabInstance:
     - target: {fileID: 3656082626678659372, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
       propertyPath: prefixField
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451829396929150490, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Direction
+        Indicator Enabled","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Collider
+        Color","value":{"r":1.0,"g":1.0,"b":1.0,"a":0.5019608,"$type":"UnityEngine.Color"},"typeHandle":{"Identification":"UnityEngine.Color,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 4470186435711563147, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31464,9 +31476,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4470186435711563147, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
   m_PrefabInstance: {fileID: 7420827406935577012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8869448649434602446 stripped
+--- !u!114 &7434212884032205182 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2155693394217585274, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 132770492611289290, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
   m_PrefabInstance: {fileID: 7420827406935577012}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

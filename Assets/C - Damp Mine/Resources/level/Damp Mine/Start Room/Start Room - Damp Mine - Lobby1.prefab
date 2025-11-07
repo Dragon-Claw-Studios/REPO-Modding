@@ -2707,13 +2707,13 @@ PrefabInstance:
       addedObject: {fileID: 2449866502810127418}
     - targetCorrespondingSourceObject: {fileID: 4954123198800789440, guid: bfd426cf887e9f44b83a4ec9fec86b6f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6543214823114950127}
-    - targetCorrespondingSourceObject: {fileID: 4954123198800789440, guid: bfd426cf887e9f44b83a4ec9fec86b6f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 9117132685863078394}
     - targetCorrespondingSourceObject: {fileID: 4954123198800789440, guid: bfd426cf887e9f44b83a4ec9fec86b6f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7117324262370626088}
+    - targetCorrespondingSourceObject: {fileID: 4954123198800789440, guid: bfd426cf887e9f44b83a4ec9fec86b6f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6543214823114950127}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd426cf887e9f44b83a4ec9fec86b6f, type: 3}
 --- !u!4 &1296820768620120036 stripped
@@ -5387,7 +5387,8 @@ PrefabInstance:
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Collider
         Color","value":{"r":0.0,"g":1.0,"b":0.0,"a":0.5019608,"$type":"UnityEngine.Color"},"typeHandle":{"Identification":"UnityEngine.Color,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Direction
-        Indicator Enabled","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":null,"$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        Indicator Enabled","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12852,7 +12853,7 @@ PrefabInstance:
     - target: {fileID: 328549989156043833, guid: cb6d3f5ddd228c24abea8a9b25a1162a, type: 3}
       propertyPath: ConnectedPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 8869448649434602446}
+      objectReference: {fileID: 7434212884032205182}
     - target: {fileID: 366703007048912295, guid: cb6d3f5ddd228c24abea8a9b25a1162a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13935,6 +13936,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1296820768620120036}
     m_Modifications:
+    - target: {fileID: 132770492611289290, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
+      propertyPath: ConnectedPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 6581974840213451889}
     - target: {fileID: 2155693394217585274, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
       propertyPath: ConnectedPoints.Array.size
       value: 2
@@ -13954,6 +13959,14 @@ PrefabInstance:
     - target: {fileID: 2563563492463989549, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451829396929150490, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Direction
+        Indicator Enabled","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Collider
+        Color","value":{"r":1.0,"g":1.0,"b":1.0,"a":0.5019608,"$type":"UnityEngine.Color"},"typeHandle":{"Identification":"UnityEngine.Color,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 4470186435711563147, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14005,9 +14018,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4470186435711563147, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
   m_PrefabInstance: {fileID: 7420827406935577012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8869448649434602446 stripped
+--- !u!114 &7434212884032205182 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2155693394217585274, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 132770492611289290, guid: 6b19beb1d2cf9d14487a5ed763e4344b, type: 3}
   m_PrefabInstance: {fileID: 7420827406935577012}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

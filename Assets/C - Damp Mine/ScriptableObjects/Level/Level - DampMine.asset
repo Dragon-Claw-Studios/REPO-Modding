@@ -20,19 +20,26 @@ MonoBehaviour:
   ConnectObject: {fileID: 1430392192916935, guid: 9fe70d1dc38d81c48bfd385fd89df9ce, type: 3}
   BlockObject: {fileID: 0}
   StartRooms:
-  - {fileID: 1520353406340181, guid: e16df27aea7fdd243be46e7e98f8e0da, type: 3}
+  - prefabName: Start Room - Damp Mine - Lobby1
+    resourcePath: Level/Damp Mine/Start Room/Start Room - Damp Mine - Lobby1
   LoadingGraphic01: {fileID: 21300000, guid: d9874c5cecee44c4d822dbf3b94ffc31, type: 3}
   LoadingGraphic02: {fileID: 21300000, guid: 6e210149dde23b840a52e2b17798fa2d, type: 3}
   LoadingGraphic03: {fileID: 21300000, guid: 0607ae4c80a3c364bb0e1a03733887b1, type: 3}
   ModulesNormal1:
-  - {fileID: 1113265517782846, guid: 98ff0a5c78d403b44b54bcf21fc69769, type: 3}
+  - prefabName: Module - Damp Mine - N - 1 - Room3
+    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - N - 1 - Room3
   ModulesPassage1:
-  - {fileID: 1714936411415595, guid: 9f24fc16c278ca247aa1b601ce556a9c, type: 3}
+  - prefabName: Module - Damp Mine - P - 1 - Room2
+    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - P - 1 - Room2
   ModulesDeadEnd1:
-  - {fileID: 1058610668093297, guid: 8b3c7bd98e268a142a95ee2588f956ea, type: 3}
+  - prefabName: Module - Damp Mine - DE - 1 - Room1
+    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - DE - 1 - Room1
   ModulesExtraction1:
-  - {fileID: 1177789523010377, guid: 710253418f08e7d45b0557442eba46d3, type: 3}
-  ModulesNormal2: []
+  - prefabName: Module - Damp Mine - E - 1 - Testing
+    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - E - 1 - Testing
+  ModulesNormal2:
+  - prefabName: Module - Damp Mine - N - 1 - Room4
+    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - N - 1 - Room4
   ModulesPassage2: []
   ModulesDeadEnd2: []
   ModulesExtraction2: []
@@ -41,7 +48,8 @@ MonoBehaviour:
   ModulesDeadEnd3: []
   ModulesExtraction3: []
   ValuablePresets:
-  - {fileID: 11400000, guid: 33b3c955a27912d4c82d1be169338f74, type: 2}
+  - {fileID: 11400000, guid: 3b06ef1c3c6385e41a1624661e9567c1, type: 2}
+  - {fileID: 11400000, guid: b61428cfd9429cc40ad2d4953e5e8ff5, type: 2}
   MusicPreset: {fileID: 11400000, guid: 57c25ab9b49d4f54db90d2da10ec4175, type: 2}
   ConstantMusicPreset: {fileID: 0}
   AmbiencePresets:
@@ -59,3 +67,4 @@ MonoBehaviour:
   VignetteColor: {r: 0.02, g: 0, b: 0.149, a: 0}
   VignetteIntensity: 0.5
   VignetteSmoothness: 0.6
+  DiscordIcon: 
