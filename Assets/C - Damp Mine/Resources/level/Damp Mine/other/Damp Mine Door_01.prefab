@@ -908,6 +908,7 @@ MonoBehaviour:
   wallTagHinges: []
   wallTagObjects:
   - {fileID: 0}
+  lowPassTriggers: []
 --- !u!114 &5397623352318771175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,7 +1113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  DoorPrefab: {fileID: 1700254134190616, guid: 44599fd3970bae44a95c1a5d8a120f47, type: 3}
+  DoorPrefab: {fileID: 1134862477478428, guid: d2bce90a657cee24b9a0f0ad5b9f4d91, type: 3}
   Hinge: {fileID: 6746844568028534065}
 --- !u!1 &2431913165654220990
 GameObject:
@@ -1592,8 +1593,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e58d79053054dc544877f81ab603552b, type: 2}
-  - {fileID: 2100000, guid: 61d2547b536d5bd46a91ddaeae8b8a47, type: 2}
   - {fileID: 2100000, guid: fc0863dc853bdbe4c94005f6f66bafa6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2142,7 +2141,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 61d2547b536d5bd46a91ddaeae8b8a47, type: 2}
+  - {fileID: 2100000, guid: fc0863dc853bdbe4c94005f6f66bafa6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
