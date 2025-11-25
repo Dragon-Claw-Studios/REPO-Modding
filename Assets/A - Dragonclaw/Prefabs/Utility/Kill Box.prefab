@@ -78,10 +78,12 @@ MonoBehaviour:
   playerTumbleTime: 0
   playerTumbleImpactHurtTime: 0
   playerTumbleImpactHurtDamage: 0
+  playerTumbleEnemyHurtDisableTime: 0
   physLogic: 1
   physDestroy: 1
   physHingeDestroy: 1
   physHingeBreak: 0
+  physReleaseGrab: 0
   physImpact: 1
   physDamageCooldown: 0.25
   physHitForce: 0
@@ -100,8 +102,8 @@ MonoBehaviour:
   enemyHitForce: 0
   enemyHitTorque: 0
   enemyRayCast: 0
-  enemyHitTriggers: 1
-  deathPit: 0
+  enemyHitTriggers: 0
+  deathPit: 1
   hitSpread: 180
   ignoreObjects: []
   hasTimer: 0

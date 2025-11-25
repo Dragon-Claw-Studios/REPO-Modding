@@ -44,7 +44,7 @@ namespace DragonClawLib
         }
 
         [PunRPC]
-        private void RPC_ActivateObject(int selectedIndex)
+        public void RPC_ActivateObject(int selectedIndex)
         {
             ActivateObject(selectedIndex);
         }

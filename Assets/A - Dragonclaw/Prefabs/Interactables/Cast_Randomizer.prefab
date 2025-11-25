@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 2972052117133319656}
   - component: {fileID: 4976400444877745301}
   - component: {fileID: 8513118253645527619}
+  - component: {fileID: 3653647008560575033}
   - component: {fileID: 5158518719098838290}
   - component: {fileID: 8664513065494464671}
   - component: {fileID: 1011092523661897173}
@@ -349,6 +350,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3653647008560575033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3243137240709944852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab8f401ece3e057ce511d64ce84d618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Group: 0
+  prefixField: 0
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 0
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!114 &5158518719098838290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +405,7 @@ MonoBehaviour:
   allowNone: 1
   randomizeOnEnable: 1
   objectsToChooseFrom:
-  - {fileID: 6761652092744589557}
+  - {fileID: 0}
 --- !u!114 &1011092523661897173
 MonoBehaviour:
   m_ObjectHideFlags: 0

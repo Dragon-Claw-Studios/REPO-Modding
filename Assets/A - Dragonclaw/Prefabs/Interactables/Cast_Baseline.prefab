@@ -4390,10 +4390,12 @@ MonoBehaviour:
   playerTumbleTime: 0
   playerTumbleImpactHurtTime: 0
   playerTumbleImpactHurtDamage: 0
+  playerTumbleEnemyHurtDisableTime: 0
   physLogic: 1
   physDestroy: 0
   physHingeDestroy: 0
   physHingeBreak: 0
+  physReleaseGrab: 0
   physImpact: 1
   physDamageCooldown: 0.25
   physHitForce: 0
@@ -4413,7 +4415,7 @@ MonoBehaviour:
   enemyHitTorque: 0
   enemyRayCast: 0
   enemyHitTriggers: 0
-  deathPit: 0
+  deathPit: 1
   hitSpread: 180
   ignoreObjects:
   - {fileID: 5448893801784576345}
@@ -5644,6 +5646,7 @@ MonoBehaviour:
   wallTagHinges: []
   wallTagObjects:
   - {fileID: 0}
+  lowPassTriggers: []
 --- !u!114 &693829573913974921
 MonoBehaviour:
   m_ObjectHideFlags: 0

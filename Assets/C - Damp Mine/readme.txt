@@ -1,10 +1,14 @@
+Level and visuals by **DragonKing**, soundtrack by **BLOKBUSTR**.
+
+Thanks for all the positive encouragement from the R.E.P.O. Modding Server and elsewhere :)
 ![Damp Mine loading graphic](https://i.postimg.cc/jd52ktk1/00.png)
 ![Damp Mine screenshot 01](https://i.postimg.cc/bNBJ7W7N/01.png)
 
-## Welcome to the Damp Mine!
+# Welcome to the Damp Mine!
 
 A WIP custom level for R.E.P.O. - with a ton of custom assets, and a few unique game mechanics.
 
+**Features:**
  - Metal casting pot mechanic
  - Working drawers
  - Lots of hiding places for valuables
@@ -13,6 +17,8 @@ A WIP custom level for R.E.P.O. - with a ton of custom assets, and a few unique 
 
 **WIP disclaimer**
 The level is playable, but lacking in room variety at the moment - something I plan on expanding as my top priority for the level. There are also some custom features that need a bit more work, so you might experience some visual oddities with the minimap, and possibly some balancing or pathing issues - most notably, there are a lot of objects that only have base colors applied, but they are ready for texturing once the level has some more room variety.
+
+Once there are enough modules, I will shift them around according to difficulty, so that more dangerous modules will appear later in progression instead.
 
 **Metal casting mechanic**
 -
