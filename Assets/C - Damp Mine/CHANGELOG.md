@@ -1,3 +1,11 @@
+## Damp Mine - 0.0.8
+- 1 New dead end module
+- 2 New extraction modules
+- Fixed some navmesh issues on previous fix for missing planks
+- Re-added missing plank used as table
+- Moved a box to make it easier to get the valuable out
+- Adjusted some lights to make the levels a bit brighter
+
 ## Damp Mine - 0.0.7
 - 1 New normal module
 - Fixed some z-fighting on shelves and catwalks
