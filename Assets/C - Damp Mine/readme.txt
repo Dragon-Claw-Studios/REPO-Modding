@@ -1,5 +1,9 @@
 Level and visuals by **DragonKing**, soundtrack by **BLOKBUSTR**.
 
+@BLOKBUSTR has been helping out, by providing some very fitting sound tracks for the level 🎵 👌- check them out at https://fanlink.tv/blokbustr
+
+If you want to help fund my caffeine addiction that helps produce content like this level, check out https://ko-fi.com/dragonking2504 
+
 Thanks for all the positive encouragement from the R.E.P.O. Modding Server and elsewhere :)
 ![Damp Mine loading graphic](https://i.postimg.cc/jd52ktk1/00.png)
 ![Damp Mine screenshot 01](https://i.postimg.cc/bNBJ7W7N/01.png)

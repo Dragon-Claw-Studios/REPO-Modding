@@ -1,3 +1,21 @@
+## Damp Mine - 0.0.11
+- New textures/materials for various objects
+- Some mesh fixes
+- Pallet texture is less grainy
+
+## Damp Mine - 0.0.10
+- 1 New passage module
+- New textures/materials for various objects
+- Fixed a light clipping issue with hanging lanterns
+- Adjusted some colors on wall materials
+
+## Damp Mine - 0.0.9
+- 1 New normal module
+- 1 New passage module
+- Fixed extraction module disabled volume colliders
+- Adjusted some lights to make the levels more bright
+- Adjusted some floor properties relating to material types across all modules
+
 ## Damp Mine - 0.0.8
 - 1 New dead end module
 - 2 New extraction modules
