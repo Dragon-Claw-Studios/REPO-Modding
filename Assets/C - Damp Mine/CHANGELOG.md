@@ -1,7 +1,8 @@
 ## Damp Mine - 0.0.11
-- New textures/materials for various objects
+- New textures/materials for remaining objects
 - Some mesh fixes
 - Pallet texture is less grainy
+- Metal casting pot will always spawn now
 
 ## Damp Mine - 0.0.10
 - 1 New passage module
