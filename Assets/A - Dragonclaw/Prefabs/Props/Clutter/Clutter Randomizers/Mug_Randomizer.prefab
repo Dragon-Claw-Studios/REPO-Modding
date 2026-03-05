@@ -224,8 +224,6 @@ GameObject:
   - component: {fileID: 20221648741013160}
   - component: {fileID: 7873733314871232560}
   - component: {fileID: 9210183335072910801}
-  - component: {fileID: 6254156053845702058}
-  - component: {fileID: 8202364465835224104}
   m_Layer: 0
   m_Name: Mug_Randomizer
   m_TagString: Untagged
@@ -381,40 +379,6 @@ MonoBehaviour:
   - {fileID: 9057311633113081454}
   - {fileID: 7723550072014223925}
   - {fileID: 6261612709122975966}
---- !u!114 &6254156053845702058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8339762545548545745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Mesh","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Mesh,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"ShowDirection","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 2238431988439037256, guid: 791ae8be7becb924d996be8085d90d93, type: 3}
---- !u!114 &8202364465835224104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8339762545548545745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 44c73d9c95f7b7b4fa004aaf21cc4468, type: 2}
 --- !u!1001 &798702779192397612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -648,7 +612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276092325232932649, guid: f5dc8ebe5978fe64bb94029418abcc73, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1498610763276792345, guid: f5dc8ebe5978fe64bb94029418abcc73, type: 3}
       propertyPath: m_LocalPosition.x

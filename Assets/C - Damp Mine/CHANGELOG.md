@@ -1,3 +1,19 @@
+## Damp Mine - 0.0.13
+- Drawers now work like carts, so valuables wont take collision damage when inside and moved
+
+## Damp Mine - 0.0.12
+- Refined textures for some objects
+- Implemented some new assets
+- Tweaked some material settings
+- Fixed some mesh issues
+- Made an extraction module smaller to avoid rare overlap of modules
+- Fixed the casting pot random selector from being misconfigured, hopefully for the last time
+- Added new casting metal types
+- Tweaked casting pot spawn weights
+- Tweaked casting metal value modifiers
+- Casting pot will now only work on Tiny, Small, Medium and Big valuables
+- Made garbage container slightly wider
+
 ## Damp Mine - 0.0.11
 - New textures/materials for remaining objects
 - Some mesh fixes

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class CastingTray : MonoBehaviour
 {
+    [Header("Allowed Volume Types")]
+    public List<ValuableVolume.Type> allowedVolumeTypes = new List<ValuableVolume.Type>();
+
     public CastingPot castingPot;
     public string materialNameSkip;
     public GameObject hurtCollider;
@@ -46,12 +49,19 @@ public class CastingTray : MonoBehaviour
         var valuable = other.GetComponentInParent<ValuableObject>();
         if (valuable == null) return;
 
+        // Volume type filter
+        if (allowedVolumeTypes.Count > 0 && !allowedVolumeTypes.Contains(valuable.volumeType))
+        {
+            // Debug.Log($"Rejected {valuable.name}, volume type {valuable.volumeType}");
+            return;
+        }
+
         var renderers = valuable.GetComponentsInChildren<MeshRenderer>();
         foreach (var renderer in renderers)
         {
             foreach (var mat in renderer.sharedMaterials)
             {
-                if (mat == null) continue; // <-- guard against missing materials
+                if (mat == null) continue;
 
                 if (mat.name.StartsWith(materialNameSkip))
                 {
