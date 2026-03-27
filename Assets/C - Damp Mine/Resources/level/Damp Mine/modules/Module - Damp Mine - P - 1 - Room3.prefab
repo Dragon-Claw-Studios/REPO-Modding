@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4977900618956596}
   - component: {fileID: 114274861772956886}
   - component: {fileID: 114379566210362898}
+  - component: {fileID: -1162905821376095869}
   m_Layer: 0
   m_Name: Module - Damp Mine - P - 1 - Room3
   m_TagString: Untagged
@@ -35,10 +36,6 @@ Transform:
   - {fileID: 4016835890838232795}
   - {fileID: 8289539115051513692}
   - {fileID: 8690566493599987499}
-  - {fileID: 6910061424688516259}
-  - {fileID: 5857069818138292175}
-  - {fileID: 5205860783628657906}
-  - {fileID: 5984714537487161018}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
 --- !u!114 &114274861772956886
@@ -98,6 +95,18 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &-1162905821376095869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714936411415595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 485409237, guid: b5320ad7101d1944abac5c26bfd8448e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &258950798781869505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,6 +2067,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7403805573773733815, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2770581146798818634}
+    - targetCorrespondingSourceObject: {fileID: 6825265635072632152, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6910061424688516259}
+    - targetCorrespondingSourceObject: {fileID: 6825265635072632152, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5857069818138292175}
+    - targetCorrespondingSourceObject: {fileID: 6825265635072632152, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5205860783628657906}
+    - targetCorrespondingSourceObject: {fileID: 6825265635072632152, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5984714537487161018}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
 --- !u!4 &228797258910719176 stripped
@@ -2093,6 +2114,11 @@ Transform:
 --- !u!4 &6796796686638518435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6775225980211455631, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
+  m_PrefabInstance: {fileID: 24033891981751852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6840216164871377780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6825265635072632152, guid: a0cb52c0cb32afe4290147f59f3f96f6, type: 3}
   m_PrefabInstance: {fileID: 24033891981751852}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6968085951991927180 stripped
@@ -6775,7 +6801,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4977900618956596}
+    m_TransformParent: {fileID: 6840216164871377780}
     m_Modifications:
     - target: {fileID: 810980452874071189, guid: d4c169c4a1d966148a0858651268f0bf, type: 3}
       propertyPath: m_Name
@@ -6787,7 +6813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6369569417388605933, guid: d4c169c4a1d966148a0858651268f0bf, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4836
+      value: 1.4836001
       objectReference: {fileID: 0}
     - target: {fileID: 6369569417388605933, guid: d4c169c4a1d966148a0858651268f0bf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18405,7 +18431,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4977900618956596}
+    m_TransformParent: {fileID: 6840216164871377780}
     m_Modifications:
     - target: {fileID: 1201753885016843228, guid: aeb5b22e25ab9a543badf9ab1059f1fe, type: 3}
       propertyPath: m_Name
@@ -18413,7 +18439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9104498158523144121, guid: aeb5b22e25ab9a543badf9ab1059f1fe, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.9610139
+      value: 1.9610142
       objectReference: {fileID: 0}
     - target: {fileID: 9104498158523144121, guid: aeb5b22e25ab9a543badf9ab1059f1fe, type: 3}
       propertyPath: m_LocalScale.z
@@ -20543,7 +20569,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4977900618956596}
+    m_TransformParent: {fileID: 6840216164871377780}
     m_Modifications:
     - target: {fileID: 6850833341425590599, guid: 78f49f18c2cb44846aaff071a0a2df98, type: 3}
       propertyPath: m_Name
@@ -27676,7 +27702,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4977900618956596}
+    m_TransformParent: {fileID: 6840216164871377780}
     m_Modifications:
     - target: {fileID: 1201753885016843228, guid: aeb5b22e25ab9a543badf9ab1059f1fe, type: 3}
       propertyPath: m_Name
@@ -27688,7 +27714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9104498158523144121, guid: aeb5b22e25ab9a543badf9ab1059f1fe, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.0179
+      value: 2.0179005
       objectReference: {fileID: 0}
     - target: {fileID: 9104498158523144121, guid: aeb5b22e25ab9a543badf9ab1059f1fe, type: 3}
       propertyPath: m_LocalPosition.x

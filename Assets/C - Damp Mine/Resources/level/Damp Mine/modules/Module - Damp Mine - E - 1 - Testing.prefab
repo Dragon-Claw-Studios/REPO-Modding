@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 4593355299808755}
   - component: {fileID: 114336823279285919}
   - component: {fileID: 114053779460473016}
+  - component: {fileID: 4000386748619373168}
   m_Layer: 0
   m_Name: Module - Damp Mine - E - 1 - Testing
   m_TagString: Untagged
@@ -129,6 +130,18 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &4000386748619373168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177789523010377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 485409237, guid: b5320ad7101d1944abac5c26bfd8448e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1215427214124579
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +360,7 @@ MonoBehaviour:
   Color: {r: 0.8832879, g: 1, b: 0, a: 1}
   ReverbPreset: {fileID: 11400000, guid: 82351eeedb09bf94ba4cea3f61b5d53b, type: 2}
   RoomAmbience: {fileID: 11400000, guid: 03fc511452d77bf458bfbdfb31de4482, type: 2}
+  RoomAmbienceOverride: {fileID: 0}
   Module: {fileID: 0}
   MapModule: {fileID: 0}
 --- !u!1 &6008530732164118951

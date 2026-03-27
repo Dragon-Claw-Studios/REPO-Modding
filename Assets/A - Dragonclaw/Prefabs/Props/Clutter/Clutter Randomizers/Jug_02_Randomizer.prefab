@@ -116,7 +116,6 @@ GameObject:
   - component: {fileID: 2764095398239543783}
   - component: {fileID: 5113619447029764545}
   - component: {fileID: 466104088081511682}
-  - component: {fileID: 3607049195135610742}
   - component: {fileID: 2968707121877207192}
   - component: {fileID: 4079902685429614420}
   m_Layer: 0
@@ -198,27 +197,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3607049195135610742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2597023194324778024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab8f401ece3e057ce511d64ce84d618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Group: 0
-  prefixField: 0
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 0
-  ObservedComponents: []
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &2968707121877207192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,12 +223,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowNone: 0
-  randomizeOnEnable: 1
   objectsToChooseFrom:
   - {fileID: 3098878194444080688}
   - {fileID: 4596147856887444545}
   - {fileID: 2631036314657243369}
   - {fileID: 3873866219413484520}
+  randomizerID: 0
 --- !u!1 &6598340680730821026
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,8 @@
 ## Damp Mine - 0.0.13
+- 1 New passage module
+- Network optimizations for randomized objects (the room (user 0) is out of 'room' viewIDs)
 - Drawers now work like carts, so valuables wont take collision damage when inside and moved
+- Implemented checks for casting pot, in case it gets destroyed or detached from its hinge
 
 ## Damp Mine - 0.0.12
 - Refined textures for some objects

@@ -641,7 +641,6 @@ GameObject:
   - component: {fileID: 6926640999126223069}
   - component: {fileID: 3366549342223712521}
   - component: {fileID: 6676889427082046822}
-  - component: {fileID: 291305328805637286}
   - component: {fileID: 2342501686851061748}
   - component: {fileID: 5854236238430075914}
   - component: {fileID: 5729233810997608616}
@@ -729,27 +728,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &291305328805637286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973205644981393307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab8f401ece3e057ce511d64ce84d618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Group: 0
-  prefixField: 0
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 0
-  ObservedComponents: []
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &2342501686851061748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,12 +754,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowNone: 0
-  randomizeOnEnable: 1
   objectsToChooseFrom:
   - {fileID: 4428683870461531104}
   - {fileID: 3314638900143433388}
   - {fileID: 3548301140282264471}
   - {fileID: 4829479976550877245}
+  randomizerID: 0
 --- !u!114 &5729233810997608616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1122,7 +1100,6 @@ GameObject:
   - component: {fileID: 505663282066057961}
   - component: {fileID: 6267637152677958057}
   - component: {fileID: 902211466717439836}
-  - component: {fileID: 6240063929711318797}
   - component: {fileID: 4370887330613307579}
   - component: {fileID: 1817317767196919668}
   m_Layer: 0
@@ -1218,27 +1195,6 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!114 &6240063929711318797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754623502662682087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab8f401ece3e057ce511d64ce84d618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Group: 0
-  prefixField: 0
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 0
-  ObservedComponents: []
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &4370887330613307579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,10 +1221,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowNone: 1
-  randomizeOnEnable: 1
   objectsToChooseFrom:
   - {fileID: 973205644981393307}
   - {fileID: 5841044228066016015}
+  randomizerID: 0
 --- !u!1 &1932732797561548975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2960,7 +2916,6 @@ GameObject:
   - component: {fileID: 848503636897223585}
   - component: {fileID: 5059233072834079334}
   - component: {fileID: 449465138441774740}
-  - component: {fileID: 969174618630227260}
   - component: {fileID: 2597092745965793988}
   - component: {fileID: 4104554047328014959}
   m_Layer: 0
@@ -3047,27 +3002,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &969174618630227260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5841044228066016015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab8f401ece3e057ce511d64ce84d618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Group: 0
-  prefixField: 0
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 0
-  ObservedComponents: []
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &2597092745965793988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3094,12 +3028,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowNone: 0
-  randomizeOnEnable: 1
   objectsToChooseFrom:
   - {fileID: 563254985548688685}
   - {fileID: 2821244561669102854}
   - {fileID: 4187477692703011541}
   - {fileID: 9087658842752348942}
+  randomizerID: 0
 --- !u!1 &5876196728738396728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,7 +3676,6 @@ GameObject:
   - component: {fileID: 1231894201841605070}
   - component: {fileID: 8641465472187185667}
   - component: {fileID: 694148778367238738}
-  - component: {fileID: 6179433766248586906}
   - component: {fileID: 2597428427211901124}
   - component: {fileID: 6232877177417293150}
   m_Layer: 0
@@ -3865,27 +3798,6 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!114 &6179433766248586906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7818469276942854109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab8f401ece3e057ce511d64ce84d618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Group: 0
-  prefixField: 0
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 0
-  ObservedComponents: []
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
 --- !u!114 &2597428427211901124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3912,12 +3824,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowNone: 0
-  randomizeOnEnable: 1
   objectsToChooseFrom:
   - {fileID: 2307896508936088129}
   - {fileID: 4082359463592009383}
   - {fileID: 5063898429174175386}
   - {fileID: 4405547457695421265}
+  randomizerID: 0
 --- !u!1 &7837935941326256314
 GameObject:
   m_ObjectHideFlags: 0
