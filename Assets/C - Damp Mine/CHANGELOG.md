@@ -1,3 +1,7 @@
+## Damp Mine - 0.0.14
+- 1 New normal module
+- Modified a normal module to better accommodate dirt floor transitions between rooms
+
 ## Damp Mine - 0.0.13
 - 1 New passage module
 - Network optimizations for randomized objects (the room (user 0) is out of 'room' viewIDs)
