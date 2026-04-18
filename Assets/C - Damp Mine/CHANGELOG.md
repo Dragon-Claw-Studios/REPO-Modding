@@ -1,6 +1,9 @@
 ## Damp Mine - 0.0.14
 - 1 New normal module
+- Overhauled overall level brightness by tweaking textures and lighting settings
+- Added a "safe zone" to the casting tray, so avoiding damaging items when casting is reduced
 - Modified a normal module to better accommodate dirt floor transitions between rooms
+- Fixed minor visual mistakes
 
 ## Damp Mine - 0.0.13
 - 1 New passage module
