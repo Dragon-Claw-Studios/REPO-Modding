@@ -151,7 +151,7 @@ public class CastingTray : MonoBehaviour
 
     public void ApplyCastingToAll(MoltenMetal metal)
     {
-        Debug.Log("Applying molten effect");
+        //Debug.Log("Applying molten effect");
         foreach (var valuable in containedValuables)
         {
             ApplyMoltenEffect(valuable, metal);

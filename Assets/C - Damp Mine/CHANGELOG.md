@@ -3,11 +3,13 @@
 - 1 New passage module
 - Overhauled overall level brightness by tweaking textures and lighting settings
 - List of possible valuables customized to include a larger variety of valuables, instead of just arctic and generic
+- Fixed minimap visual bugs and custom solution
 - Added a "safe zone" to the casting tray, so avoiding damaging items when casting is reduced
 - Modified a normal module to better accommodate dirt floor transitions between rooms
 - Fixed some light leaking through geometry
 - Fixed a negative scale collider
 - Fixed minor visual mistakes
+- Removed some debug logging
 
 ## Damp Mine - 0.0.13
 - 1 New passage module
