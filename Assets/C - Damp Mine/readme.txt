@@ -10,29 +10,32 @@ Thanks for all the positive encouragement from the R.E.P.O. Modding Server and e
 
 # Welcome to the Damp Mine!
 
-A WIP custom level for R.E.P.O. - with a ton of custom assets, and a few unique game mechanics.
+A custom level for R.E.P.O. - with almost entirely custom assets, and a few unique game mechanics.
 
 **Features:**
  - Metal casting pot mechanic
  - Working drawers
  - Lots of hiding places for valuables
- - Custom visuals and effects
+ - Plenty of verticality
+ - Custom models
+ - Custom textures
+ - Custom shaders and effects
  - Custom soundtracks
 
 **WIP disclaimer**
-The level is playable, but lacking in room variety at the moment - something I plan on expanding as my top priority for the level. There are also some custom features that need a bit more work, so you might experience some visual oddities with the minimap, and possibly some balancing or pathing issues - most notably, there are a lot of objects that only have base colors applied, but they are ready for texturing once the level has some more room variety.
+The level is playable, but lacking in room variety at the moment - something I plan on expanding as my top priority for the level. There are also some custom features that need a bit more work, so you might experience some visual oddities, and possibly some balancing or pathing issues.
 
 Once there are enough modules, I will shift them around according to difficulty, so that more dangerous modules will appear later in progression instead.
 
 **Metal casting mechanic**
 -
-The mine features smelting casts, where you can coat a valuable with a shiny metal. Doing so, will affect the physical properties of the valuable, as well as its value - based on the type of metal in the cast.
+The mine features smelting casts, where you can coat a valuable with a shiny metal. Doing so, will affect the physical properties of the valuable, as well as its value - based on the type of metal in the casting pot.
 
 Simply put the valuable on the casting tray ->
 ![Damp Mine casting tutorial 01](https://i.postimg.cc/m25DvJ08/smelt-01.png)
 Rotate the casting pot till it starts pouring ->
 ![Damp Mine casting tutorial 02](https://i.postimg.cc/fTrLGp65/smelt-02.png)
-And you got yourself a more valuable, and potentially sturdy, valuable! ->
+And you got yourself a more valuable, and potentially sturdy, valuable! - be aware, that it might also become heavier. ->
 ![Damp Mine casting tutorial 03](https://i.postimg.cc/TY4wzFZ4/smelt-03.png)
 
 Screenshot gallery
@@ -56,5 +59,5 @@ Below are more images of some of the possible level modules (some might differ s
 
 ![Damp Mine screenshot 10](https://i.postimg.cc/t4nTpDbF/10.png)
 
-Example of the minimap (WIP).
+Example of the minimap.
 ![Damp Mine minimap screenshot 01](https://i.postimg.cc/jdF5pmGX/01E.png)

@@ -1,3 +1,6 @@
+## Damp Mine - 0.0.15
+- 1 New entrance module
+
 ## Damp Mine - 0.0.14
 - 1 New normal module
 - 1 New passage module
