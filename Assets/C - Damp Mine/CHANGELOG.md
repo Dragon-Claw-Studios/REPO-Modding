@@ -1,6 +1,7 @@
 ## Damp Mine - 0.0.15
 - 2 New entrance modules
-- 1 New extraction module
+- 2 New extraction modules
+- Lighting and texture tweaks
 
 ## Damp Mine - 0.0.14
 - 1 New normal module

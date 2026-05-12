@@ -12,34 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409054382c13ee7d4e9126c1b58d3c2b, type: 3}
   m_Name: Level - DampMine
   m_EditorClassIdentifier: 
-  ResourcePath: Damp Mine
   NarrativeName: Cinder mining Co.
+  NarrativeNameLocalized: {fileID: 11400000, guid: 35b584c6d690f104eb407565b9adc4db, type: 2}
   ModuleAmount: 5
   PassageMaxAmount: 5
   HasEnemies: 1
-  ConnectObject: {fileID: 1430392192916935, guid: 9fe70d1dc38d81c48bfd385fd89df9ce, type: 3}
-  BlockObject: {fileID: 0}
+  ConnectObject:
+    prefab: {fileID: 1430392192916935, guid: 9fe70d1dc38d81c48bfd385fd89df9ce, type: 3}
+    prefabName: Damp Mine Door_01_Double
+    resourcePath: level/Damp Mine/other/Damp Mine Door_01_Double
+    bundle: {fileID: 0}
+  BlockObject:
+    prefab: {fileID: 0}
+    prefabName: 
+    resourcePath: 
+    bundle: {fileID: 0}
   StartRooms:
-  - prefabName: Start Room - Damp Mine - Lobby4
-    resourcePath: Level/Damp Mine/Start Room/Start Room - Damp Mine - Lobby4
+  - prefab: {fileID: 1520353406340181, guid: e16df27aea7fdd243be46e7e98f8e0da, type: 3}
+    prefabName: Start Room - Damp Mine - Lobby1
+    resourcePath: level/Damp Mine/Start Room/Start Room - Damp Mine - Lobby1
+    bundle: {fileID: 0}
   LoadingGraphic01: {fileID: 21300000, guid: d9874c5cecee44c4d822dbf3b94ffc31, type: 3}
   LoadingGraphic02: {fileID: 21300000, guid: 6e210149dde23b840a52e2b17798fa2d, type: 3}
   LoadingGraphic03: {fileID: 21300000, guid: 0607ae4c80a3c364bb0e1a03733887b1, type: 3}
   ModulesNormal1:
-  - prefabName: Module - Damp Mine - N - 1 - Room4
-    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - N - 1 - Room4
+  - prefab: {fileID: 1113265517782846, guid: dcb37bd2cbb5170438d41a1f996a0180, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room1
+    resourcePath: level/Damp Mine/modules/Module - Damp Mine - N - 1 - Room1
+    bundle: {fileID: 0}
   ModulesPassage1:
-  - prefabName: Module - Damp Mine - P - 1 - Room5
-    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - P - 1 - Room5
+  - prefab: {fileID: 1714936411415595, guid: 9f24fc16c278ca247aa1b601ce556a9c, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room1
+    resourcePath: level/Damp Mine/modules/Module - Damp Mine - P - 1 - Room1
+    bundle: {fileID: 0}
   ModulesDeadEnd1:
-  - prefabName: Module - Damp Mine - DE - 1 - Room4
-    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - DE - 1 - Room4
+  - prefab: {fileID: 1058610668093297, guid: 8b3c7bd98e268a142a95ee2588f956ea, type: 3}
+    prefabName: Module - Damp Mine - DE - 1 - Room1
+    resourcePath: level/Damp Mine/modules/Module - Damp Mine - DE - 1 - Room1
+    bundle: {fileID: 0}
   ModulesExtraction1:
-  - prefabName: Module - Damp Mine - E - 1 - Room3
-    resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - E - 1 - Room3
+  - prefab: {fileID: 1177789523010377, guid: 8ad41cfebfae53446bf7b7e9d6ca04b5, type: 3}
+    prefabName: Module - Damp Mine - E - 1 - Room1
+    resourcePath: level/Damp Mine/modules/Module - Damp Mine - E - 1 - Room1
+    bundle: {fileID: 0}
   ModulesNormal2:
-  - prefabName: Module - Damp Mine - N - 1 - Room4
+  - prefab: {fileID: 0}
+    prefabName: Module - Damp Mine - N - 1 - Room4
     resourcePath: Level/Damp Mine/Modules/Module - Damp Mine - N - 1 - Room4
+    bundle: {fileID: 0}
   ModulesPassage2: []
   ModulesDeadEnd2: []
   ModulesExtraction2: []
@@ -47,14 +67,16 @@ MonoBehaviour:
   ModulesPassage3: []
   ModulesDeadEnd3: []
   ModulesExtraction3: []
+  ModulesSpecialAmount: 0
+  ModulesSpecial: []
   ValuablePresets:
-  - {fileID: 11400000, guid: 3b06ef1c3c6385e41a1624661e9567c1, type: 2}
+  - {fileID: 11400000, guid: bc9693ae51bf6cf4bb54ac5f54916d5b, type: 2}
   - {fileID: 11400000, guid: 514517938d7081a4c84c3e9913ed8328, type: 2}
   MusicPreset: {fileID: 11400000, guid: 57c25ab9b49d4f54db90d2da10ec4175, type: 2}
   ConstantMusicPreset: {fileID: 0}
   AmbiencePresets:
-  - {fileID: 11400000, guid: fd0bb0b2c52f3d14680204c450382004, type: 2}
-  - {fileID: 11400000, guid: 524c35651a51ae14490f410f1eb7298a, type: 2}
+  - {fileID: 11400000, guid: 4f78227b68a3a884682351c47b0c4196, type: 2}
+  - {fileID: 11400000, guid: b9c2d3b863f664e4eaf9e9776b689812, type: 2}
   FogColor: {r: 0.07450981, g: 0.023529412, b: 0, a: 1}
   FogStartDistance: 3
   FogEndDistance: 18
@@ -64,6 +86,7 @@ MonoBehaviour:
   ColorFilter: {r: 1, g: 0.92156863, b: 0.88235295, a: 1}
   BloomIntensity: 10
   BloomThreshold: 0.9
+  LensDistortionIntensity: 30
   VignetteColor: {r: 0.047058824, g: 0.011764706, b: 0, a: 0}
   VignetteIntensity: 0.5
   VignetteSmoothness: 0.6

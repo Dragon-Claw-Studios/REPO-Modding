@@ -2525,7 +2525,7 @@ AudioSource:
   m_GameObject: {fileID: 2614026270675095152}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300038, guid: e976115d38d99584b92af1f9bdfdfab3, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300038, guid: 4679f47483e96be48b4987334b21c228, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4498,6 +4498,7 @@ MonoBehaviour:
   playerTumbleImpactHurtTime: 0
   playerTumbleImpactHurtDamage: 0
   playerTumbleEnemyHurtDisableTime: 0
+  playerHitFullRuckus: 0
   physLogic: 1
   physDestroy: 0
   physHingeDestroy: 0
@@ -4526,6 +4527,7 @@ MonoBehaviour:
   hitSpread: 180
   ignoreObjects:
   - {fileID: 5448893801784576345}
+  ignorePlayers: []
   hasTimer: 0
   timer: 0.2
   destroyOnTimerEnd: 0
@@ -5597,9 +5599,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleDisable: 0
+  particleBreakSmokeDisable: 0
+  hasFreezeFrameOnBreakParticles: 1
   particleMultiplier: 1
   playerHurtDisable: 0
   slidingDisable: 0
+  destroyInvestigate: 1
   destroyDisable: 0
   indestructibleBreakEffects: 1
   canHurtLogic: 1
@@ -5634,6 +5639,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onDestroy:
+    m_PersistentCalls:
+      m_Calls: []
+  onHurtColliderHit:
     m_PersistentCalls:
       m_Calls: []
   inCart: 0
@@ -5672,10 +5680,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clientNonKinematic: 0
   overrideTagsAndLayers: 1
+  ignoreGrabPointCentering: 0
   rb: {fileID: 0}
   dead: 0
   grabbed: 0
   grabbedLocal: 0
+  lookedUponWhileGrabbed: 1
   playerGrabbing: []
   spawned: 0
   lightBreakImpulse: 0
@@ -5747,6 +5757,9 @@ MonoBehaviour:
     OffscreenVolume: 1
     OffscreenFalloff: 1
     LowPassIgnoreColliders: []
+    onLoopComplete:
+      m_PersistentCalls:
+        m_Calls: []
   drag: 2
   bounceAmount: 0
   bounceEffect: 0
@@ -5802,6 +5815,7 @@ MonoBehaviour:
   audioPresetPitch: 1
   hasHealth: 0
   healthMax: 0
+  healthDestroy: 1
   healthLossOnBreakLight: 0
   healthLossOnBreakMedium: 0
   healthLossOnBreakHeavy: 0
