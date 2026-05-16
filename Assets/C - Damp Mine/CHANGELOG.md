@@ -1,7 +1,13 @@
+## Damp Mine - 0.0.16
+- Hovercarts now intentionally wont be destroyed when hovering over lava
+
 ## Damp Mine - 0.0.15
+- Update for The Cosmetic Update
 - 2 New entrance modules
 - 2 New extraction modules
+- Removed position-based brightness randomness from lava shader
 - Lighting and texture tweaks
+- Updated the readme with new screenshots
 
 ## Damp Mine - 0.0.14
 - 1 New normal module
