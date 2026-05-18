@@ -1,5 +1,9 @@
 ## Damp Mine - 0.0.16
-- Hovercarts now intentionally wont be destroyed when hovering over lava
+- 2 New normal modules
+- Hovercarts wont hover over lava anymore, and get destroyed as intended
+- Improved player collision with cable spools
+- Small visual mesh fixes
+- Lighting tweaks to some modules
 
 ## Damp Mine - 0.0.15
 - Update for The Cosmetic Update
