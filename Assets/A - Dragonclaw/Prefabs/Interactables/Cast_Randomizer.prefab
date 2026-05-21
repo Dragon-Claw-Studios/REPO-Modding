@@ -272,7 +272,6 @@ GameObject:
   - component: {fileID: 8513118253645527619}
   - component: {fileID: 3653647008560575033}
   - component: {fileID: 5158518719098838290}
-  - component: {fileID: 8664513065494464671}
   - component: {fileID: 1011092523661897173}
   - component: {fileID: 2277858590806631565}
   m_Layer: 0
@@ -291,7 +290,7 @@ Transform:
   m_GameObject: {fileID: 3243137240709944852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.500041, y: -0.0000026524067, z: -24.24907}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -391,22 +390,6 @@ MonoBehaviour:
   m_IgnoreFromBuild: 0
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
---- !u!114 &8664513065494464671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3243137240709944852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2128240121, guid: b5320ad7101d1944abac5c26bfd8448e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  allowNone: 0
-  randomizeOnEnable: 1
-  objectsToChooseFrom:
-  - {fileID: 0}
 --- !u!114 &1011092523661897173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,7 +630,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowNone: 0
-  randomizeOnEnable: 1
   objectsToChooseFrom:
   - {fileID: 5234888767866425138}
   - {fileID: 4524232706012309853}

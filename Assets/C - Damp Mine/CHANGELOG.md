@@ -1,9 +1,11 @@
 ## Damp Mine - 0.0.16
 - 2 New normal modules
+- New large metal casting device for large valuables
 - Hovercarts wont hover over lava anymore, and get destroyed as intended
 - Improved player collision with cable spools
 - Small visual mesh fixes
 - Lighting tweaks to some modules
+- Added invisible player colliders to start module, to prevent getting stuck
 
 ## Damp Mine - 0.0.15
 - Update for The Cosmetic Update

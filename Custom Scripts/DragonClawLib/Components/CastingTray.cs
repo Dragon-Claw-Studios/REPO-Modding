@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class CastingTray : MonoBehaviour
 {
     [Header("Allowed Volume Types")]
@@ -17,30 +16,47 @@ public class CastingTray : MonoBehaviour
 
     [Header("Pour Visuals")]
     public List<GameObject> pourVisuals;
-    public Transform liquidLayer;         // Visual part of the liquid
-    public float pourDepth = 0.5f;        // How far liquid sinks
-    public float pourDuration = 1.5f;     // Time for the liquid to animate
+    public Transform liquidLayer;
+    public float pourDepth = 0.5f;
+    public float pourDuration = 1.5f;
 
     private Material instancedLiquidMaterial;
+    private Material liquidLayerMaterialInstance;
+    private Renderer liquidLayerRenderer;
+
     [SerializeField] private float fadeDuration = 0.5f;
     [SerializeField] private string transparencyProperty = "_Transparency";
 
-    [Header("Indicator Lamp")]
-    public Renderer indicatorLampRenderer;
+    [Header("Indicator Lamps")]
+    public List<Renderer> indicatorLampRenderers = new List<Renderer>();
+
     public Color redEmission = Color.red;
-    public Color orangeEmission = new Color(1f, 0.5f, 0f); // Bright orange
+    public Color orangeEmission = new Color(1f, 0.5f, 0f);
     public Color greenEmission = Color.green;
+
     private Color lastAppliedEmission = Color.clear;
 
-    private Material indicatorMaterialInstance;
+    // One instanced material per renderer
+    private List<Material> indicatorMaterialInstances = new List<Material>();
 
     void Start()
     {
-        if (indicatorLampRenderer != null)
+        InitializeIndicatorLamps();
+        UpdateIndicatorColor();
+        PourVisualsInitialize();
+    }
+
+    void InitializeIndicatorLamps()
+    {
+        indicatorMaterialInstances.Clear();
+
+        foreach (var renderer in indicatorLampRenderers)
         {
-            indicatorMaterialInstance = indicatorLampRenderer.material;
-            UpdateIndicatorColor(); 
-            PourVisualsInitialize(); 
+            if (renderer == null)
+                continue;
+
+            Material instance = renderer.material;
+            indicatorMaterialInstances.Add(instance);
         }
     }
 
@@ -52,11 +68,11 @@ public class CastingTray : MonoBehaviour
         // Volume type filter
         if (allowedVolumeTypes.Count > 0 && !allowedVolumeTypes.Contains(valuable.volumeType))
         {
-            // Debug.Log($"Rejected {valuable.name}, volume type {valuable.volumeType}");
             return;
         }
 
         var renderers = valuable.GetComponentsInChildren<MeshRenderer>();
+
         foreach (var renderer in renderers)
         {
             foreach (var mat in renderer.sharedMaterials)
@@ -65,7 +81,6 @@ public class CastingTray : MonoBehaviour
 
                 if (mat.name.StartsWith(materialNameSkip))
                 {
-                    // Debug.Log($"Skipping {valuable.name}, already cast.");
                     return;
                 }
             }
@@ -79,16 +94,14 @@ public class CastingTray : MonoBehaviour
         if (!containedValuables.Contains(valuable))
         {
             containedValuables.Add(valuable);
-            // Debug.Log($"Adding item to be cast: {valuable.name}");
 
-            // Attach or reuse the destruction watcher
             var watcher = valuable.GetComponent<ValuableDestructionWatcher>();
+
             if (watcher == null)
             {
                 watcher = valuable.gameObject.AddComponent<ValuableDestructionWatcher>();
             }
 
-            // Reassign tray reference if needed
             if (watcher.tray != this)
             {
                 watcher.tray = this;
@@ -96,21 +109,24 @@ public class CastingTray : MonoBehaviour
 
             watcher.valuable = valuable;
         }
+
         UpdateIndicatorColor();
     }
 
     void OnTriggerExit(Collider other)
     {
         var valuable = other.GetComponentInParent<ValuableObject>();
-        if (valuable == null || !colliderCounts.ContainsKey(valuable)) return;
+
+        if (valuable == null || !colliderCounts.ContainsKey(valuable))
+            return;
 
         colliderCounts[valuable]--;
 
         if (colliderCounts[valuable] <= 0)
         {
-            // Debug.Log($"Removing item to be cast: {valuable.name}");
             containedValuables.Remove(valuable);
             colliderCounts.Remove(valuable);
+
             UpdateIndicatorColor();
         }
     }
@@ -119,14 +135,14 @@ public class CastingTray : MonoBehaviour
     {
         containedValuables.Remove(valuable);
         colliderCounts.Remove(valuable);
-        // Debug.Log($"Destroyed valuable removed from tray: {valuable.name}");
 
         UpdateIndicatorColor();
     }
 
     public void UpdateIndicatorColor()
     {
-        if (indicatorMaterialInstance == null) return;
+        if (indicatorMaterialInstances.Count == 0)
+            return;
 
         Color targetColor;
 
@@ -135,23 +151,35 @@ public class CastingTray : MonoBehaviour
             targetColor = Color.black;
         }
         else if (containedValuables.Count == 0)
+        {
             targetColor = redEmission;
+        }
         else if (containedValuables.Count == 1)
+        {
             targetColor = greenEmission;
+        }
         else
+        {
             targetColor = orangeEmission;
+        }
 
-        if (targetColor == lastAppliedEmission) return; // No need to update
+        if (targetColor == lastAppliedEmission)
+            return;
 
         lastAppliedEmission = targetColor;
 
-        indicatorMaterialInstance.SetColor("_Color", targetColor == Color.black ? Color.white : targetColor);
-        indicatorMaterialInstance.SetColor("_EmissionColor", targetColor);
+        foreach (var material in indicatorMaterialInstances)
+        {
+            if (material == null)
+                continue;
+
+            material.SetColor("_Color", targetColor == Color.black ? Color.white : targetColor);
+            material.SetColor("_EmissionColor", targetColor);
+        }
     }
 
     public void ApplyCastingToAll(MoltenMetal metal)
     {
-        //Debug.Log("Applying molten effect");
         foreach (var valuable in containedValuables)
         {
             ApplyMoltenEffect(valuable, metal);
@@ -167,14 +195,15 @@ public class CastingTray : MonoBehaviour
         {
             if (!renderer.enabled)
             {
-                // Skip renderers used only for colliders or invisible meshes
                 continue;
             }
 
             Material[] newMats = new Material[renderer.sharedMaterials.Length];
+
             for (int i = 0; i < newMats.Length; i++)
             {
                 Material original = renderer.sharedMaterials[i];
+
                 if (original == null)
                 {
                     newMats[i] = null;
@@ -182,8 +211,8 @@ public class CastingTray : MonoBehaviour
                 }
 
                 Material moltenCopy = new Material(original);
+
                 moltenCopy.name = moltenMetalPreset.castedMaterial.name;
-               
                 moltenCopy.shader = moltenMetalPreset.castedMaterial.shader;
 
                 moltenCopy.SetFloat("_Overlay_Albedo_Intensity", moltenMetalPreset.castedMaterial.GetFloat("_Overlay_Albedo_Intensity"));
@@ -204,7 +233,6 @@ public class CastingTray : MonoBehaviour
                     {
                         moltenCopy.SetFloat("_Metallic", moltenMetalPreset.castedMaterial.GetFloat("_Metallic"));
                     }
-
                 }
 
                 if (original.HasProperty("_BumpScale"))
@@ -217,7 +245,6 @@ public class CastingTray : MonoBehaviour
                     {
                         moltenCopy.SetFloat("_BumpScale", moltenMetalPreset.castedMaterial.GetFloat("_BumpScale"));
                     }
-            
                 }
 
                 if (original.HasProperty("_GlossMapScale"))
@@ -230,7 +257,6 @@ public class CastingTray : MonoBehaviour
                     {
                         moltenCopy.SetFloat("_GlossMapScale", moltenMetalPreset.castedMaterial.GetFloat("_GlossMapScale"));
                     }
-
                 }
 
                 newMats[i] = moltenCopy;
@@ -239,7 +265,6 @@ public class CastingTray : MonoBehaviour
             renderer.materials = newMats;
         }
 
-        // Modify stats
         obj.dollarValueCurrent *= moltenMetalPreset.valueMultiplier;
         obj.durabilityPreset = moltenMetalPreset.castedDurability;
         obj.audioPreset = moltenMetalPreset.castedAudioPreset;
@@ -247,29 +272,24 @@ public class CastingTray : MonoBehaviour
 
         if (obj.physAttributePreset.mass < moltenMetalPreset.castedPhysAttribute.mass)
         {
-            // Retain original mass if object is "heavier" than the cast metal properties
             obj.physAttributePreset = moltenMetalPreset.castedPhysAttribute;
             obj.gameObject.GetComponent<Rigidbody>().mass = obj.physAttributePreset.mass;
         }
-
-        // Debug.Log($"Casted {obj.name} with {moltenMetalPreset.name}");
     }
-
 
     void UpdateImpactDetector(ValuableObject valuable)
     {
         var detector = valuable.GetComponent<PhysGrabObjectImpactDetector>();
-        if (detector == null) return;
 
-        // Update durability and fragility
+        if (detector == null)
+            return;
+
         detector.durability = valuable.durabilityPreset.durability;
         detector.fragility = valuable.durabilityPreset.fragility;
 
-        // Update audio
         detector.impactAudio = valuable.audioPreset;
         detector.impactAudioPitch = valuable.audioPresetPitch;
 
-        // update gradient for particles if used
         if (detector.particles != null)
         {
             detector.particles.gradient = valuable.particleColors;
@@ -288,7 +308,7 @@ public class CastingTray : MonoBehaviour
 
     private void PourVisualsInitialize()
     {
-        // Clone the material once from the first pourVisual with a Renderer
+        // Initialize pour visuals
         foreach (var obj in pourVisuals)
         {
             if (obj != null && obj.TryGetComponent<Renderer>(out var renderer))
@@ -301,72 +321,102 @@ public class CastingTray : MonoBehaviour
                 renderer.material = instancedLiquidMaterial;
             }
 
-            // Ensure visuals start disabled
-            if (obj != null) obj.SetActive(false);
+            if (obj != null)
+                obj.SetActive(false);
+        }
+
+        // Initialize liquid layer material separately
+        if (liquidLayer != null)
+        {
+            liquidLayerRenderer = liquidLayer.GetComponent<Renderer>();
+
+            if (liquidLayerRenderer != null)
+            {
+                liquidLayerMaterialInstance = new Material(liquidLayerRenderer.sharedMaterial);
+                liquidLayerRenderer.material = liquidLayerMaterialInstance;
+            }
         }
     }
 
-
     private IEnumerator PourVisualCoroutine()
     {
-        // Activate VFX objects (e.g. pour stream)
         foreach (var obj in pourVisuals)
         {
-            if (obj != null) obj.SetActive(true);
+            if (obj != null)
+                obj.SetActive(true);
         }
 
-        // --- Fade In Transparency (0 → 1) ---
         if (instancedLiquidMaterial != null)
         {
             float tFadeIn = 0f;
+
             while (tFadeIn < fadeDuration)
             {
                 tFadeIn += Time.deltaTime;
+
                 float alpha = Mathf.Lerp(0f, 1f, tFadeIn / fadeDuration);
+
                 instancedLiquidMaterial.SetFloat(transparencyProperty, alpha);
+
                 yield return null;
             }
+
             instancedLiquidMaterial.SetFloat(transparencyProperty, 1f);
         }
 
-        // --- Pour Movement ---
+        // --- Pour Movement + Simultaneous Transparency Fade ---
         if (liquidLayer != null)
         {
             Vector3 start = liquidLayer.localPosition;
             Vector3 target = start - new Vector3(0, pourDepth, 0);
+
             float t = 0f;
 
             while (t < pourDuration)
             {
                 t += Time.deltaTime;
+
                 float progress = Mathf.Clamp01(t / pourDuration);
+
+                // Move liquid downward
                 liquidLayer.localPosition = Vector3.Lerp(start, target, progress);
+
+                // Fade pour stream material
+                if (instancedLiquidMaterial != null)
+                {
+                    float alpha = Mathf.Lerp(1f, 0f, progress);
+                    instancedLiquidMaterial.SetFloat(transparencyProperty, alpha);
+                }
+
+                // Fade liquid layer material
+                if (liquidLayerMaterialInstance != null)
+                {
+                    float alpha = Mathf.Lerp(1f, 0f, progress);
+                    liquidLayerMaterialInstance.SetFloat(transparencyProperty, alpha);
+                }
+
                 yield return null;
             }
 
             liquidLayer.localPosition = target;
-        }
 
-        // --- Fade Out Transparency (1 → 0) ---
-        if (instancedLiquidMaterial != null)
-        {
-            float tFadeOut = 0f;
-            while (tFadeOut < fadeDuration)
+            if (instancedLiquidMaterial != null)
             {
-                tFadeOut += Time.deltaTime;
-                float alpha = Mathf.Lerp(1f, 0f, tFadeOut / fadeDuration);
-                instancedLiquidMaterial.SetFloat(transparencyProperty, alpha);
-                yield return null;
+                instancedLiquidMaterial.SetFloat(transparencyProperty, 0f);
             }
-            instancedLiquidMaterial.SetFloat(transparencyProperty, 0f);
+
+            if (liquidLayerMaterialInstance != null)
+            {
+                liquidLayerMaterialInstance.SetFloat(transparencyProperty, 0f);
+            }
         }
 
         yield return new WaitForSeconds(1f);
 
         foreach (var obj in pourVisuals)
         {
-            if (obj != null) obj.SetActive(false);
+            if (obj != null)
+                obj.SetActive(false);
         }
     }
-
 }
