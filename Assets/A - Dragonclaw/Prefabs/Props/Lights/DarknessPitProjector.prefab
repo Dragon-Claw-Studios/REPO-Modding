@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4834721207656454748}
   - component: {fileID: 7549276784350469936}
+  - component: {fileID: 283315472556531587}
   m_Layer: 0
   m_Name: DarknessProjectorPoint
   m_TagString: Untagged
@@ -57,8 +58,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6283290754866503635}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000014901159, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -7.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73,13 +74,25 @@ Projector:
   m_GameObject: {fileID: 6283290754866503635}
   m_Enabled: 1
   serializedVersion: 2
-  m_NearClipPlane: 0.01
-  m_FarClipPlane: 14.99
+  m_NearClipPlane: -7.5
+  m_FarClipPlane: 7.5
   m_FieldOfView: 60
   m_AspectRatio: 2.5
   m_Orthographic: 1
-  m_OrthographicSize: 2.996
+  m_OrthographicSize: 3
   m_Material: {fileID: 2100000, guid: e30ff3588e719f34bbf0c66f22d97487, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
     m_Bits: 2
+--- !u!114 &283315472556531587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6283290754866503635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -416975500, guid: b5320ad7101d1944abac5c26bfd8448e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

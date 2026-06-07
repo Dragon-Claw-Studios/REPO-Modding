@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DragonClaw")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+073289b1c242861bacc415407e85f557e17bf170")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d9c00f51fc41f588c571007f243546a70df37da")]
 [assembly: System.Reflection.AssemblyProductAttribute("DragonClawLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DragonClawLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

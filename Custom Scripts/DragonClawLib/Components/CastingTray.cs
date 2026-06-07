@@ -189,14 +189,16 @@ public class CastingTray : MonoBehaviour
 
     void ApplyMoltenEffect(ValuableObject obj, MoltenMetal moltenMetalPreset)
     {
-        var renderers = obj.GetComponentsInChildren<MeshRenderer>();
+        var renderers = obj.GetComponentsInChildren<MeshRenderer>(true);
 
         foreach (var renderer in renderers)
         {
+            /*
             if (!renderer.enabled)
             {
                 continue;
             }
+            */
 
             Material[] newMats = new Material[renderer.sharedMaterials.Length];
 
@@ -222,6 +224,25 @@ public class CastingTray : MonoBehaviour
                 moltenCopy.SetTexture("_Overlay_Metallic", moltenMetalPreset.castedMaterial.GetTexture("_Overlay_Metallic"));
                 moltenCopy.SetTexture("_Overlay_Normal", moltenMetalPreset.castedMaterial.GetTexture("_Overlay_Normal"));
                 moltenCopy.SetTexture("_Overlay_Roughness", moltenMetalPreset.castedMaterial.GetTexture("_Overlay_Roughness"));
+
+                moltenCopy.SetFloat("_Overlay_Emission_Strength", moltenMetalPreset.castedMaterial.GetFloat("_Overlay_Emission_Strength"));
+                moltenCopy.SetTexture("_Overlay_Emission", moltenMetalPreset.castedMaterial.GetTexture("_Overlay_Emission"));
+                moltenCopy.SetColor("_Overlay_EmissionColor", moltenMetalPreset.castedMaterial.GetColor("_Overlay_EmissionColor"));
+
+                if (moltenCopy.HasProperty("_Brightness_Minimum"))
+                {
+                    moltenCopy.SetFloat("_Brightness_Minimum", moltenMetalPreset.castedMaterial.GetFloat("_Brightness_Minimum"));
+                }
+
+                if (moltenCopy.HasProperty("_Brightness_Maximum"))
+                {
+                    moltenCopy.SetFloat("_Brightness_Maximum", moltenMetalPreset.castedMaterial.GetFloat("_Brightness_Maximum"));
+                }
+
+                if (moltenCopy.HasProperty("_Pulse_Speed"))
+                {
+                    moltenCopy.SetFloat("_Pulse_Speed", moltenMetalPreset.castedMaterial.GetFloat("_Pulse_Speed"));
+                }
 
                 if (original.HasProperty("_Metallic"))
                 {

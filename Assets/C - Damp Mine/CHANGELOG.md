@@ -1,5 +1,16 @@
+## Damp Mine - 0.0.17
+- Fixed MP sync for large cast handle
+- Cast metal properties are now different across materials, some are more sturdy or heavy than others
+- Cast Tiberium and Cobalt now glows with an emission effect
+- Metal casting visuals now also affect disabled game objects, such as the alternate head for the scream doll
+- Cardboard boxes, that can be opened, now have a red mark
+- Moved some objects for improved interactions
+- Projector effects are now restrained to the module bounds
+- Fixed placement of some floating clutter objects
+
 ## Damp Mine - 0.0.16
 - 4 New normal modules
+- 1 New passage module
 - New large metal casting device for large valuables
 - Hovercarts wont hover over lava anymore, and get destroyed as intended
 - Improved player collision with cable spools
