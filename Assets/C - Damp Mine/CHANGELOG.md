@@ -1,3 +1,6 @@
+## Damp Mine - 0.0.18
+- Fixed level loading graphics
+
 ## Damp Mine - 0.0.17
 - Fixed MP sync for large cast handle
 - Cast metal properties are now different across materials, some are more sturdy or heavy than others
