@@ -1,5 +1,6 @@
 ## Damp Mine - 0.0.18
 - Fixed level loading graphics
+- Bumped up the weight of cast metal
 
 ## Damp Mine - 0.0.17
 - Fixed MP sync for large cast handle

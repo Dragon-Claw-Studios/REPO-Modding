@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
-using DragonClawLib;
 using Photon.Pun;
 using UnityEngine;
 
@@ -11,29 +11,69 @@ namespace DragonClawLib
         private ValuableObject valuableObject;
         private PhotonView photonView;
 
-        public List<ValueModifierPart> parts = new List<ValueModifierPart>();
+        private List<StatsModifierPart> parts = new();
+
+        private bool initialized = false;
 
         private void Awake()
         {
             valuableObject = GetComponent<ValuableObject>();
             photonView = GetComponent<PhotonView>();
-            // Don't get parts here yet - they may be disabled/not active.
         }
 
-        private void Start()
+        // 🔥 called by builder ONLY when safe
+        public void InitializeFromBuilder()
         {
-            // Now that parts should be enabled by ModularValuableBuilder, fetch them:
-            parts = GetComponentsInChildren<ValueModifierPart>(true).Where(p => p.gameObject.activeInHierarchy).ToList();
+            if (initialized)
+                return;
 
-            StartCoroutine(ApplyPartValuesLater());
+            StartCoroutine(InitializeRoutine());
         }
 
-        private System.Collections.IEnumerator ApplyPartValuesLater()
+        private bool HasParticleSystem()
+        {
+            var impact = GetComponent<PhysGrabObjectImpactDetector>();
+            if (impact == null) return false;
+
+            return impact.GetComponentInChildren<PhysObjectParticles>(true) != null;
+        }
+
+        private IEnumerator InitializeRoutine()
+        {
+            yield return null;
+
+            parts = GetComponentsInChildren<StatsModifierPart>(true)
+                .Where(p => p.gameObject.activeInHierarchy)
+                .ToList();
+
+            ApplyParticleGradientOverride();
+
+            yield return new WaitUntil(() => HasParticleSystem());
+
+            ApplyParticlePatch();
+        }
+
+        private void ApplyParticleGradientOverride()
+        {
+            foreach (var part in parts)
+            {
+                if (!part.overrideParticleColors)
+                    continue;
+
+                if (part.particleColors == null)
+                    continue;
+
+                valuableObject.particleColors = part.particleColors;
+                break;
+            }
+        }
+
+        private IEnumerator ApplyPartValuesLater()
         {
             yield return new WaitUntil(() => valuableObject.dollarValueSet);
 
             float baseValue = valuableObject.dollarValueOriginal;
-            float modifierTotal = 1f + (0.1f * parts.Sum(part => part.valueModifier));
+            float modifierTotal = 1f + (0.1f * parts.Sum(p => p.valueModifier));
             float finalValue = Mathf.Round(baseValue * modifierTotal);
 
             if (SemiFunc.IsMultiplayer())
@@ -42,7 +82,8 @@ namespace DragonClawLib
                 {
                     valuableObject.dollarValueOriginal = finalValue;
                     valuableObject.dollarValueCurrent = finalValue;
-                    photonView.RPC("SyncFinalValue", RpcTarget.Others, finalValue);
+
+                    photonView.RPC(nameof(SyncFinalValue), RpcTarget.Others, finalValue);
                 }
             }
             else
@@ -50,8 +91,18 @@ namespace DragonClawLib
                 valuableObject.dollarValueOriginal = finalValue;
                 valuableObject.dollarValueCurrent = finalValue;
             }
+        }
 
-            //Debug.Log($"[ModularValuable] Total Value Set: {finalValue} (Base: {baseValue}, Parts: {modifierTotal})");
+        private void ApplyParticlePatch()
+        {
+            var impact = GetComponent<PhysGrabObjectImpactDetector>();
+            if (impact == null) return;
+
+            var particles = impact.GetComponentInChildren<PhysObjectParticles>(true);
+            if (particles == null) return;
+
+            // 🔥 THIS is the important line
+            particles.gradient = valuableObject.particleColors;
         }
 
         [PunRPC]

@@ -1,13 +1,11 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 using Photon.Pun;
+using UnityEngine;
 
 namespace DragonClawLib
 {
-
     public class ModularValuableBuilder : MonoBehaviourPun
     {
-
         private Rigidbody rb;
 
         [Header("Names of child parts (e.g., Valuable_Slot_Blade, Valuable_Slot_Guard, Valuable_Slot_Hilt)")]
@@ -17,8 +15,8 @@ namespace DragonClawLib
 
         private void Awake()
         {
-
             rb = GetComponent<Rigidbody>();
+
             if (rb != null)
             {
                 rb.useGravity = false;
@@ -26,10 +24,9 @@ namespace DragonClawLib
             }
 
             if (buildOnAwake && SemiFunc.IsMasterClientOrSingleplayer())
+            {
                 BuildAndSyncParts();
-
-
-
+            }
         }
 
         private void Start()
@@ -43,7 +40,6 @@ namespace DragonClawLib
             }
         }
 
-        // Called by master client only
         public void BuildAndSyncParts()
         {
             List<int> selectedIndexes = new();
@@ -51,10 +47,11 @@ namespace DragonClawLib
             foreach (var groupName in partGroupNames)
             {
                 Transform group = transform.Find(groupName);
+
                 if (group == null || group.childCount == 0)
                 {
                     Debug.LogWarning($"[ModularBuilder] Missing or empty group '{groupName}'");
-                    selectedIndexes.Add(-1); // sentinel for missing group
+                    selectedIndexes.Add(-1);
                     continue;
                 }
 
@@ -64,34 +61,36 @@ namespace DragonClawLib
                 EnableOnly(group, selectedIndex);
             }
 
-            // Sync with others
             photonView.RPC(nameof(RPC_SyncParts), RpcTarget.OthersBuffered, selectedIndexes.ToArray());
+
+            // 🔥 IMPORTANT: finalize AFTER local build
+            FinalizeBuild();
         }
 
-        // RPC to sync enabled parts
         [PunRPC]
         private void RPC_SyncParts(int[] selectedIndexes)
         {
             for (int i = 0; i < partGroupNames.Count && i < selectedIndexes.Length; i++)
             {
-                string groupName = partGroupNames[i];
-                int selectedIndex = selectedIndexes[i];
+                Transform group = transform.Find(partGroupNames[i]);
 
-                Transform group = transform.Find(groupName);
-                if (group == null || selectedIndex < 0 || selectedIndex >= group.childCount)
+                int index = selectedIndexes[i];
+
+                if (group == null || index < 0 || index >= group.childCount)
                     continue;
 
-                EnableOnly(group, selectedIndex);
+                EnableOnly(group, index);
             }
+
+            // 🔥 IMPORTANT: finalize AFTER remote build
+            FinalizeBuild();
         }
 
         private void EnableOnly(Transform group, int index)
         {
-            // Disable all first
             foreach (Transform child in group)
                 child.gameObject.SetActive(false);
 
-            // Enable selected
             Transform selected = group.GetChild(index);
             EnableRecursively(selected.gameObject);
         }
@@ -99,10 +98,15 @@ namespace DragonClawLib
         private void EnableRecursively(GameObject obj)
         {
             obj.SetActive(true);
+
             foreach (Transform child in obj.transform)
-            {
                 EnableRecursively(child.gameObject);
-            }
+        }
+
+        // 🔥 THIS is the key to fixing your entire pipeline
+        private void FinalizeBuild()
+        {
+            GetComponent<ModularValuableLogic>()?.InitializeFromBuilder();
         }
     }
 }
