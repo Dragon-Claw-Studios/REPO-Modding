@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409054382c13ee7d4e9126c1b58d3c2b, type: 3}
   m_Name: Level - DampMine
   m_EditorClassIdentifier: 
-  NarrativeName: Cinder mining Co.
+  NarrativeName: Dragon's Maw Mining Corp
   NarrativeNameLocalized: {fileID: 0}
   ModuleAmount: 5
   PassageMaxAmount: 5
@@ -28,10 +28,25 @@ MonoBehaviour:
     resourcePath: 
     bundle: {fileID: 0}
   StartRooms:
+  - prefab: {fileID: 1520353406340181, guid: e16df27aea7fdd243be46e7e98f8e0da, type: 3}
+    prefabName: Start Room - Damp Mine - Lobby1
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/Start Room/Start
+      Room - Damp Mine - Lobby1.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1520353406340181, guid: b233e1a45e6a73c4c82b15100174433e, type: 3}
+    prefabName: Start Room - Damp Mine - Lobby2
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/Start Room/Start
+      Room - Damp Mine - Lobby2.prefab
+    bundle: {fileID: 0}
   - prefab: {fileID: 1520353406340181, guid: fe759cf1c44aa76488803882691266a7, type: 3}
     prefabName: Start Room - Damp Mine - Lobby3
     resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/Start Room/Start
       Room - Damp Mine - Lobby3.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1520353406340181, guid: 4ea470d6343df844fb890b2788d81cbd, type: 3}
+    prefabName: Start Room - Damp Mine - Lobby4
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/Start Room/Start
+      Room - Damp Mine - Lobby4.prefab
     bundle: {fileID: 0}
   LoadingGraphic01:
     prefab: {fileID: 21300000, guid: d9874c5cecee44c4d822dbf3b94ffc31, type: 3}
@@ -49,18 +64,138 @@ MonoBehaviour:
     resourcePath: Assets/A - Dragonclaw/Textures/Sprites/level_damp_mine_03.png
     bundle: {fileID: 0}
   ModulesNormal1:
+  - prefab: {fileID: 1113265517782846, guid: dcb37bd2cbb5170438d41a1f996a0180, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room1
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room1.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: 20143b6508d86934fa325e89802d4cd8, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room2
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room2.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: c59405527e190f04683eef81fd9fd73d, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room3
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room3.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: b4cb8fb54b5fcfe40891c6f80619633e, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room4
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room4.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: 98ff0a5c78d403b44b54bcf21fc69769, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room5
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room5.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: 47ad80b1b93518d42bc327fdeff2a130, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room6
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room6.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: de763fb262439c944b7c8b1c0bc526b4, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room7
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room7.prefab
+    bundle: {fileID: 0}
   - prefab: {fileID: 1113265517782846, guid: e4274d1b5125f0a4e8d46b1880abb71e, type: 3}
     prefabName: Module - Damp Mine - N - 1 - Room8
     resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
       Damp Mine - N - 1 - Room8.prefab
     bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: f0b28347e114a3e4c802704d6f16df30, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room9
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room9.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: 1638ecfdcbc90404daead19818c63b2e, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room10
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room10.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: a382ed319d436fc459db40b18fa3c524, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room11
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room11.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: 28d9132809d336c47a335c18b9257586, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room12
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room12.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: 76b1d4508cb3cc641871e40e6cdaf843, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room13
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room13.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1113265517782846, guid: ef60356c6a8dc55438229bf73693ba08, type: 3}
+    prefabName: Module - Damp Mine - N - 1 - Room14
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - N - 1 - Room14.prefab
+    bundle: {fileID: 0}
   ModulesPassage1:
+  - prefab: {fileID: 1714936411415595, guid: 9f24fc16c278ca247aa1b601ce556a9c, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room1
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room1.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1714936411415595, guid: eaf06a3155beff5419c44a17efd49944, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room2
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room2.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1714936411415595, guid: b4109798bf76cbf4eae4575f5f3c9921, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room3
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room3.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1714936411415595, guid: 822806acfb0c4ff4594281454b8c52b8, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room4
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room4.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1714936411415595, guid: cb18717166f8fa74e85f5603a604e03a, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room5
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room5.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1714936411415595, guid: 62d3d21e8e0ddc843ae9da7b1de0b9cb, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room6
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room6.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1714936411415595, guid: 8e6c2357efb671945b56fd9ceb6a4715, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room7
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room7.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1714936411415595, guid: 45136e1cf07f3c7479a62d0cc61da8af, type: 3}
+    prefabName: Module - Damp Mine - P - 1 - Room8
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - P - 1 - Room8.prefab
+    bundle: {fileID: 0}
   - prefab: {fileID: 1714936411415595, guid: 39625ccc895cb7149bc797813c82fbb7, type: 3}
     prefabName: Module - Damp Mine - P - 1 - Room9
     resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
       Damp Mine - P - 1 - Room9.prefab
     bundle: {fileID: 0}
   ModulesDeadEnd1:
+  - prefab: {fileID: 1058610668093297, guid: 8b3c7bd98e268a142a95ee2588f956ea, type: 3}
+    prefabName: Module - Damp Mine - DE - 1 - Room1
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - DE - 1 - Room1.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1058610668093297, guid: 3966707ccabe5074bb5977c95ce00e4f, type: 3}
+    prefabName: Module - Damp Mine - DE - 1 - Room2
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - DE - 1 - Room2.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1058610668093297, guid: ddee2e14f6e04694e8cd9e63d56ffd00, type: 3}
+    prefabName: Module - Damp Mine - DE - 1 - Room3
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - DE - 1 - Room3.prefab
+    bundle: {fileID: 0}
   - prefab: {fileID: 1058610668093297, guid: f3bbdb160128c2749a044a7bb5a91dc1, type: 3}
     prefabName: Module - Damp Mine - DE - 1 - Room4
     resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
@@ -70,6 +205,21 @@ MonoBehaviour:
   - prefab: {fileID: 1177789523010377, guid: 8ad41cfebfae53446bf7b7e9d6ca04b5, type: 3}
     prefabName: Module - Damp Mine - E - 1 - Room1
     resourcePath: level/Damp Mine/modules/Module - Damp Mine - E - 1 - Room1
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1177789523010377, guid: 8379fbd956652d346957b1ede5e2209f, type: 3}
+    prefabName: Module - Damp Mine - E - 1 - Room2
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - E - 1 - Room2.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1177789523010377, guid: b4a970c48bf73a24db13f81d0aaae206, type: 3}
+    prefabName: Module - Damp Mine - E - 1 - Room3
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - E - 1 - Room3.prefab
+    bundle: {fileID: 0}
+  - prefab: {fileID: 1177789523010377, guid: 24a9704992b77ec46854f679cfab9bfb, type: 3}
+    prefabName: Module - Damp Mine - E - 1 - Room4
+    resourcePath: Assets/C - Damp Mine/Resources/level/Damp Mine/modules/Module -
+      Damp Mine - E - 1 - Room4.prefab
     bundle: {fileID: 0}
   ModulesNormal2: []
   ModulesPassage2: []

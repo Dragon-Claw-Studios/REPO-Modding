@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2387825953162380692}
   - component: {fileID: 4292005034630041841}
+  - component: {fileID: 7504725002872609887}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -39,7 +40,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456499562949162866}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
@@ -94,6 +95,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!122 &7504725002872609887
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456499562949162866}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278213632
+  m_Size: 0.25
 --- !u!1 &2681818293793480675
 GameObject:
   m_ObjectHideFlags: 0

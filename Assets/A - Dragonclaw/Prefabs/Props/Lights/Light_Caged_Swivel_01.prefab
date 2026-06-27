@@ -210,115 +210,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.03750074, y: 0.17999989, z: 0.035000023}
   m_Center: {x: 0.2687496, y: 0.089999944, z: 0.00000009313226}
---- !u!1 &3831452253784784852
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7455314228278461057}
-  - component: {fileID: 4350884149234016979}
-  - component: {fileID: 4475389931991251494}
-  m_Layer: 0
-  m_Name: 'Light_Source '
-  m_TagString: Prop Lights
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7455314228278461057
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3831452253784784852}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7435986005580362556}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &4350884149234016979
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3831452253784784852}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 0.5801887, a: 1}
-  m_Intensity: 3.2
-  m_Range: 4.2
-  m_SpotAngle: 62
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.1
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 0
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!114 &4475389931991251494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3831452253784784852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c5831920c47b179b189f39981a1023, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelLight: 1
-  lightRangeMultiplier: 1
 --- !u!1 &6095700536440303328
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +221,7 @@ GameObject:
   - component: {fileID: 7435986005580362556}
   - component: {fileID: 8633667361667783436}
   - component: {fileID: 81290074076574383}
+  - component: {fileID: 3497330084566898631}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Prop Lights
@@ -349,8 +241,7 @@ Transform:
   m_LocalPosition: {x: 0.25, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7455314228278461057}
+  m_Children: []
   m_Father: {fileID: 4956999879975916954}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!108 &8633667361667783436
@@ -429,6 +320,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLight: 1
   lightRangeMultiplier: 1
+--- !u!122 &3497330084566898631
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6095700536440303328}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4282017382
+  m_Size: 0.25
 --- !u!1 &6227603272014498236
 GameObject:
   m_ObjectHideFlags: 0
