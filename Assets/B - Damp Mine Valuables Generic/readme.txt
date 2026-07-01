@@ -1,0 +1,1 @@
+Adds a damp mine valuables to all levels.

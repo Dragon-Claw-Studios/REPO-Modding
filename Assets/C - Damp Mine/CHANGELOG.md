@@ -1,4 +1,7 @@
 ## Damp Mine - 0.0.18
+- Fixed a visual glitch with the lava in one of the starting rooms
+
+## Damp Mine - 0.0.18
 - Major performance optimizations
 - Fixed level loading graphics
 - Bumped up the weight of cast metal

@@ -1,1 +1,1 @@
-Adds a damp mine level.
+Adds a damp mine valuables to Damp Mine only.
