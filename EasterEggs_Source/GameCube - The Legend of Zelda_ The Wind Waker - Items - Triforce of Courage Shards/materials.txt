@@ -1,0 +1,49 @@
+SC_tri_out
+==========
+  Textures:
+    - V_tri_spc
+        Offset: 1, 1
+        Scale: 0.4000000059604645, 1
+        Rotation: 0.249977111117893
+
+  Ambient Colors:
+    - 100, 100, 100, 50
+
+  Constant Colors:
+    - 255, 255, 255, 175
+
+  Color Registers:
+    - 128, 128, 128, 255
+    - 255, 255, 105, 255
+
+  Steps:
+    1: RGB = if R of (tex #1 RGB) > (128, 128, 128), use (0, 0, 0), otherwise (0, 0, 0), then add (255, 255, 105)
+         A = if R of (tex #1 A) > 255, use 175, otherwise 0
+
+
+
+Z_tri_in
+========
+  Textures:
+    - Vtrif
+    - V_tri_spc
+        Scale: 0.5, 0.5
+    - ZAtoon
+
+  Ambient Colors:
+    - 100, 100, 100, 50
+
+  Constant Colors:
+    - 160, 90, 0, 255
+    - 255, 255, 255, 30
+
+  Color Registers:
+    - 128, 128, 128, 255
+
+  Steps:
+    1: RGB = (lerp from (128, 128, 128) to (255, 255, 255) using (tex #3 RGB))
+         A = 0
+    2: RGB = ((tex #1 RGB) * (prev. RGB))
+         A = (tex #1 A)
+    3: RGB = if R of (tex #2 RGB) > (128, 128, 128), use (30, 30, 30), otherwise (0, 0, 0), then add (prev. RGB)
+         A = (prev. A)
