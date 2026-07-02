@@ -75,21 +75,10 @@ crashlytics-build.properties
 .idea/
 
 # Patcher specific
-/Assets/Unity.VisualScripting.Generated/**
-
-# Ignore all ripped files except meta data
-/Assets/REPO/Game/**
-!/Assets/REPO/Game/**/
-!/Assets/REPO/Game/**/*.meta
-/REPO/
-
+/[Aa]ssets/REPO/Game/*
 *.dll*
 /AssetRipper/*
 /AssetRipperOutput/*
 
-# Krita
-*.kra~
-Krita/ambientcg/ambientcg processing.kra
-Krita/ambientcg/ambientcg processing Post.kra
 
-/EasterEggs_Source/*
+/[Aa]ssets/Unity.VisualScripting.Generated*
