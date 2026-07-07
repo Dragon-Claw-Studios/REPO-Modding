@@ -2,7 +2,7 @@ Level and visuals by **DragonKing**, soundtrack by **BLOKBUSTR**.
 
 @BLOKBUSTR has been helping out, by providing some very fitting sound tracks for the level 🎵 👌- check them out at https://fanlink.tv/blokbustr
 
-If you want to help fund my caffeine addiction that helps produce content like this level, check out https://ko-fi.com/dragonking2504 
+If you want to help fund my caffeine addiction that helps produce content like this, check out https://ko-fi.com/dragonking2504 
 
 Thanks for all the positive encouragement from the R.E.P.O. Modding Server and elsewhere :)
 ![Damp Mine loading graphic](https://i.postimg.cc/jd52ktk1/00.png)
@@ -22,6 +22,15 @@ A custom level for R.E.P.O. - with almost entirely custom assets, and a few uniq
  - Custom shaders and effects
  - Custom soundtracks
 
+**Module variants:**
+| Module | Count |
+|--|--|
+| Start| 4|
+| Normal | 14|
+| Passage | 9|
+| Dead End| 4 |
+| Extraction | 4 |
+| Total | 35 |
 
 **WIP disclaimer**
 The level is playable, but lacking in room variety at the moment - something I plan on expanding as my top priority for the level. There are also some custom features that need a bit more work, so you might experience some visual oddities, and possibly some balancing or pathing issues.

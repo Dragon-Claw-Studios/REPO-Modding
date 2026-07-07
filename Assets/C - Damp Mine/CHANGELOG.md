@@ -1,7 +1,11 @@
+## Damp Mine - 0.0.20
+- Fixed missing collider on curved ceiling pieces
+
 ## Damp Mine - 0.0.19
+- Updated project and ripped latest asset versions
+- Map markers for casting devices
 - Replaced the halo effect on crystals with a custom halo effect
 - Fixed a visual glitch with the lava in one of the starting rooms
-- Updated project and ripped latest asset versions
 
 ## Damp Mine - 0.0.18
 - Major performance optimizations

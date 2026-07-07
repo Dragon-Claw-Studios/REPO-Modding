@@ -44,7 +44,9 @@ public class ValuableLineupHolder : MonoBehaviour
         {
             Transform t = list[i];
 
+#if UNITY_EDITOR
             Undo.RecordObject(t, "Rebuild Valuable Layout");
+#endif
 
             t.position = transform.position + dir * spacing * i;
         }
